@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FAFAFA">
+
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/et_bgstyle"
+        android:hint="Search"
+        android:padding="20dp"
+        android:elevation="10dp"
+        android:layout_below="@id/screenTitle"
+        android:layout_marginTop="36dp"
+        />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:mipmap/sym_def_app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DASHBOARD"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_below="@id/appLogo"
+        android:id="@+id/screenTitle"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>
