@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">PabiliPal</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string name="products">Products</string>
+    <string name="inventory">Inventory</string>
 
     <string-array name="dashboard_text">
         <item>Products</item>
         <item>Inventory</item>
     </string-array>
-    
+
     <string-array name="dahboard_description">
         <item>Explore and purchase a variety of products from clothing to electronics or easily sell your own, all on one convenient app.</item>
         <item>Easily keep track of what you\'re selling with our app. Stay organized and know what\'s in stock and what\'s selling, all in one place.</item>
