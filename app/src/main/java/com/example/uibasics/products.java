@@ -29,7 +29,7 @@ public class products extends AppCompatActivity {
 
         GridView gridView = findViewById(R.id.availableItems);
 
-        ItemGridAdapter gridAdapter = new ItemGridAdapter(products.this, productName, productPrice, quantity, images);
+        ItemGridAdapter gridAdapter = new ItemGridAdapter(products.this, productName, productPrice, quantity, images, false);
 
         gridView.setAdapter(gridAdapter);
 

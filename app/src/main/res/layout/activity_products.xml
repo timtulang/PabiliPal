@@ -16,6 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/appLogo"
         android:textSize="35sp"
+        android:layout_marginTop="14dp"
         tools:layout_editor_absoluteX="341dp"
         tools:layout_editor_absoluteY="585dp" />
 
@@ -24,7 +25,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="64dp"
         app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
     <EditText
