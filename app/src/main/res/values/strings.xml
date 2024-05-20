@@ -14,4 +14,11 @@
         <item>Explore and purchase a variety of products from clothing to electronics or easily sell your own, all on one convenient app.</item>
         <item>Easily keep track of what you\'re selling with our app. Stay organized and know what\'s in stock and what\'s selling, all in one place.</item>
     </string-array>
+
+    <string-array name="roles_array">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+
+
 </resources>
