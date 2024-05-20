@@ -16,4 +16,8 @@
         android:layout_centerInParent="true"
         tools:layout_editor_absoluteX="341dp"
         tools:layout_editor_absoluteY="585dp" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>
