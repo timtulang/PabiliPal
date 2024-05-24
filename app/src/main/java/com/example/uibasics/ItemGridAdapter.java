@@ -7,20 +7,25 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.List;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 public class ItemGridAdapter extends BaseAdapter {
 
     Context context;
-    String[] productNames;
-    double[] productPrices;
-    int[] productQuantities, images;
+    ArrayList<String> productNames;
+    ArrayList<Double> productPrices;
+    ArrayList<Integer> productQuantities;
+    List<byte[]> images;
     boolean isSecondGridView;
     LayoutInflater inflater;
 
     private static final int CONSTANT_ITEM_TYPE = 1;
     private static final int REGULAR_ITEM_TYPE = 0;
 
-    public ItemGridAdapter(Context context, String[] productNames, double[] productPrices, int[] productQuantities, int[] images, boolean isSecondGridView) {
+    public ItemGridAdapter(Context context, ArrayList<String> productNames, ArrayList<Double> productPrices, ArrayList<Integer> productQuantities, List<byte[]> images, boolean isSecondGridView) {
         this.context = context;
         this.productNames = productNames;
         this.productPrices = productPrices;
@@ -32,15 +37,15 @@ public class ItemGridAdapter extends BaseAdapter {
     @Override
     public int getCount() {
         if (isSecondGridView) {
-            return productNames.length + 1; // Extra item for the constant item
+            return productNames.size() + 1; // Extra item for the constant item
         } else {
-            return productNames.length;
+            return productNames.size();
         }
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (isSecondGridView && position == productNames.length) {
+        if (isSecondGridView && position == productNames.size()) {
             return CONSTANT_ITEM_TYPE;
         } else {
             return REGULAR_ITEM_TYPE;
@@ -54,16 +59,29 @@ public class ItemGridAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        if (isSecondGridView && position == productNames.length) {
+        if (isSecondGridView && position == productNames.size()) {
             return null; // Return null for the constant item
         } else {
-            return productNames[position];
+            return productNames.get(position);
         }
     }
 
     @Override
     public long getItemId(int position) {
         return position;
+    }
+
+    public List<Bitmap> convertBit(){
+        List<Bitmap> bitmapList = new ArrayList<>();
+
+        for (int i = 0; i < images.size(); i++) {
+            byte[] byteArray = images.get(i);
+
+            Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+            bitmapList.add(bitmap);
+        }
+
+        return bitmapList;
     }
 
     @Override
@@ -88,10 +106,10 @@ public class ItemGridAdapter extends BaseAdapter {
             TextView productPrice = convertView.findViewById(R.id.productPriceItems);
             TextView productQuantity = convertView.findViewById(R.id.productQuantityItems);
 
-            imageView.setImageResource(images[position]);
-            productName.setText(productNames[position]);
-            productPrice.setText(String.valueOf(productPrices[position]));
-            productQuantity.setText(String.valueOf(productQuantities[position]));
+            imageView.setImageBitmap(convertBit().get(position));
+            productName.setText(productNames.get(position));
+            productPrice.setText(String.valueOf(productPrices.get(position)));
+            productQuantity.setText(String.valueOf(productQuantities.get(position)));
         }
 
         return convertView;
