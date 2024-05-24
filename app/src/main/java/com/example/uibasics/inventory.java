@@ -9,6 +9,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class inventory extends AppCompatActivity {
 
     @Override
@@ -21,11 +24,21 @@ public class inventory extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        InventoryRepository inventoryRepository = new InventoryRepository(inventory.this);
 
-        String[] productName = {"Toothpaste", "Toothbrush", "Soap", "Shampoo"};
-        double[] productPrice = {10.00, 25.5, 17, 25};
-        int[] quantity = {10, 5, 12, 11};
-        int [] images = {R.drawable.placeholder, R.drawable.placeholder, R.drawable.placeholder, R.drawable.placeholder};
+        ArrayList<InventoryItem> itemsRetrieved = new ArrayList<>(inventoryRepository.getItems());
+
+        ArrayList<String> productName = new ArrayList<>();
+        ArrayList<Double> productPrice = new ArrayList<>();
+        ArrayList<Integer> quantity = new ArrayList<>();
+        List<byte[]> images = new ArrayList<>();
+
+        for (int i = 0; i < itemsRetrieved.size(); i++){
+            productName.add(itemsRetrieved.get(i).getName());
+            productPrice.add(itemsRetrieved.get(i).getPrice());
+            quantity.add(itemsRetrieved.get(i).getStock());
+            images.add(itemsRetrieved.get(i).getImage());
+        }
 
         GridView gridView = findViewById(R.id.availableItems);
 

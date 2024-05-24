@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_admin.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_sign_up.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_inventory.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_inventory.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/menuviewrow.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/menuviewrow.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_products.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_products.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/grid_item.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/grid_item.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/inventoryaddbutton.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/inventoryaddbutton.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_login.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_mainlogin.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_mainlogin.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_user.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_user.xml"
+    }
+]
