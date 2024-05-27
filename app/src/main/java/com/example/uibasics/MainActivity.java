@@ -2,6 +2,7 @@ package com.example.uibasics;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,8 +17,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements MenuRecyclerInterface{
     ArrayList <MenuItemModel> menuItemModels = new ArrayList<>();
     int[] menuItemImages = {R.drawable.bag_shopping_solid_1, R.drawable.truck_moving_solid_1};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Toast.makeText(this, "MainActivity Launched", Toast.LENGTH_SHORT).show();
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements MenuRecyclerInter
                 startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(this, inventory.class);
+                intent = new Intent(this, Inventory.class);
                 startActivity(intent);
                 break;
             default:

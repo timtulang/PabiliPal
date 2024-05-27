@@ -5,4 +5,10 @@
     <color name="primary">#71A5DE</color>
     <color name="bgColor">#AECBEB</color>
     <color name="accent">#71A5DE</color>
+
+    <color name="lightestblue">#F8F9FB</color>
+    <color name="lightblue">#E1ECF7</color>
+    <color name="blue">#AECBEB</color>
+    <color name="darkblue">#83B0E1</color>
+    <color name="darkestblue">#71A5DE</color>
 </resources>
