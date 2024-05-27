@@ -46,13 +46,14 @@ public class Inventory extends AppCompatActivity {
 
         gridView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent;
-            if(itemsRetrieved.isEmpty()){
-                intent = new Intent(Inventory.this, AddItemInventory.class);
-            } else {
+            try {
                 InventoryItem selectedItem = itemsRetrieved.get(position);
                 intent = new Intent(Inventory.this, EditItemInventory.class);
-                intent.putExtra("selectedItem", (Parcelable) selectedItem);
+                intent.putExtra("selectedItem", selectedItem);
+            } catch (IndexOutOfBoundsException e){
+                intent = new Intent(Inventory.this, AddItemInventory.class);
             }
+
             startActivityForResult(intent, ADD_ITEM_REQUEST_CODE);
         });
     }
@@ -89,4 +90,6 @@ public class Inventory extends AppCompatActivity {
         gridAdapter = new ItemGridAdapter(Inventory.this, productName, productPrice, quantity, images, true);
         gridView.setAdapter(gridAdapter);
     }
+
+
 }

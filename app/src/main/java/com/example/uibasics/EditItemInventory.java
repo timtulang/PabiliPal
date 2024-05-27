@@ -17,7 +17,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class EditItemInventory extends AppCompatActivity {
 
-
     int id;
     String name;
     double price = 0;
@@ -28,7 +27,7 @@ public class EditItemInventory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_add_item_inventory);
+        setContentView(R.layout.activity_edit_item_inventory);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -36,7 +35,7 @@ public class EditItemInventory extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        InventoryItem selectedItem = intent.getParcelableExtra("selectedItem");
+        InventoryItem selectedItem = (InventoryItem) intent.getSerializableExtra("selectedItem");
 
         ImageView addImage = findViewById(R.id.addImage);
         EditText productName = findViewById(R.id.productName);

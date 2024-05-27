@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:databinding-adapters:8.3.2] C:\Users\tulan\.gradle\caches\transforms-3\736e771853a5f04a430b5bc9a8f49c62\transformed\databinding-adapters-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.3.2] C:\Users\tulan\.gradle\caches\transforms-3\c568046a547c2ff71627baaf33acf9bc\transformed\databinding-runtime-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:viewbinding:8.3.2] C:\Users\tulan\.gradle\caches\transforms-3\bd058be82a7ae444bb6af12b1637e934\transformed\viewbinding-8.3.2\AndroidManifest.xml:2:1-7:12
@@ -68,8 +68,8 @@ ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-53:19
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-53:19
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-56:19
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-56:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\tulan\.gradle\caches\transforms-3\d992937e7b52743c834b79a00e6082a4\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\tulan\.gradle\caches\transforms-3\d992937e7b52743c834b79a00e6082a4\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tulan\.gradle\caches\transforms-3\e2c6ce80458a3d0b2bbed601c957d0e9\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -166,12 +166,18 @@ ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidMa
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:48:13-38
-meta-data#preloaded_fonts
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:50:9-52:57
-	android:resource
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:52:13-54
+activity#com.example.uibasics.EditItemInventory
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:50:9-52:40
+	android:exported
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:51:13-43
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:51:13-46
+meta-data#preloaded_fonts
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:53:9-55:57
+	android:resource
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:55:13-54
+	android:name
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:54:13-43
 uses-sdk
 INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml
