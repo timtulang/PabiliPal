@@ -8,20 +8,16 @@
         "source": "com.example.uibasics.app-main-35:/drawable/blue_border.xml"
     },
     {
+        "merged": "com.example.uibasics.app-debug-33:/layout_activity_add_item_inventory.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_add_item_inventory.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_et_bgstyle2.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/et_bgstyle2.xml"
+    },
+    {
         "merged": "com.example.uibasics.app-debug-33:/drawable_ic_launcher_foreground.xml.flat",
         "source": "com.example.uibasics.app-main-35:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-anydpi/ic_launcher.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -32,16 +28,8 @@
         "source": "com.example.uibasics.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/layout_inventoryaddbutton.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/inventoryaddbutton.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.uibasics.app-debug-33:/drawable-xxxhdpi_ic_products.png.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable-xxxhdpi/ic_products.png"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -50,10 +38,6 @@
     {
         "merged": "com.example.uibasics.app-debug-33:/layout_activity_user.xml.flat",
         "source": "com.example.uibasics.app-main-35:/layout/activity_user.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/layout_activity_sign_up.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up.xml"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/layout_activity_login.xml.flat",
@@ -68,12 +52,12 @@
         "source": "com.example.uibasics.app-main-35:/drawable/truck_moving_solid_1.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/drawable_baseline_lock_24.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/drawable/baseline_lock_24.xml"
-    },
-    {
         "merged": "com.example.uibasics.app-debug-33:/drawable_rounded_button.xml.flat",
         "source": "com.example.uibasics.app-main-35:/drawable/rounded_button.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable-xxhdpi_ic_products.png.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable-xxhdpi/ic_products.png"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/drawable_et_bgstyle.xml.flat",
@@ -82,14 +66,6 @@
     {
         "merged": "com.example.uibasics.app-debug-33:/drawable_union.xml.flat",
         "source": "com.example.uibasics.app-main-35:/drawable/union.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/layout_activity_admin.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_admin.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/layout_activity_main.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_main.xml"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/font_poppins_semibold.xml.flat",
@@ -108,28 +84,12 @@
         "source": "com.example.uibasics.app-main-35:/layout/grid_item.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "com.example.uibasics.app-debug-33:/font_poppins_medium.xml.flat",
         "source": "com.example.uibasics.app-main-35:/font/poppins_medium.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/drawable_baseline_password_24.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/drawable/baseline_password_24.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/drawable_loginbg2.png.flat",
-        "source": "com.example.uibasics.app-main-35:/drawable/loginbg2.png"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/font_poppins_bold.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/font/poppins_bold.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-debug-33:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "com.example.uibasics.app-debug-33:/drawable-xhdpi_ic_products.png.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable-xhdpi/ic_products.png"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/drawable_chart_line_solid_1.xml.flat",
@@ -144,12 +104,12 @@
         "source": "com.example.uibasics.app-main-35:/font/poppins.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/drawable/ic_launcher_background.xml"
-    },
-    {
         "merged": "com.example.uibasics.app-debug-33:/layout_activity_inventory.xml.flat",
         "source": "com.example.uibasics.app-main-35:/layout/activity_inventory.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_pluswhite.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/pluswhite.xml"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/layout_activity_products.xml.flat",
@@ -160,16 +120,100 @@
         "source": "com.example.uibasics.app-main-35:/layout/activity_mainlogin.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/xml/data_extraction_rules.xml"
-    },
-    {
         "merged": "com.example.uibasics.app-debug-33:/layout_menuviewrow.xml.flat",
         "source": "com.example.uibasics.app-main-35:/layout/menuviewrow.xml"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/drawable_placeholder.xml.flat",
         "source": "com.example.uibasics.app-main-35:/drawable/placeholder.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable-mdpi_ic_products.png.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable-mdpi/ic_products.png"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_buttonshape.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/buttonshape.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/layout_inventoryaddbutton.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/inventoryaddbutton.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_baseline_lock_24.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/baseline_lock_24.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/layout_activity_admin.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/layout_activity_main.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_circlebuttonbg.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/circlebuttonbg.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_baseline_password_24.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/baseline_password_24.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable-hdpi_ic_products.png.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable-hdpi/ic_products.png"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_loginbg2.png.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/loginbg2.png"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/font_poppins_bold.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/font/poppins_bold.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_minus.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/minus.xml"
     },
     {
         "merged": "com.example.uibasics.app-debug-33:/xml_backup_rules.xml.flat",

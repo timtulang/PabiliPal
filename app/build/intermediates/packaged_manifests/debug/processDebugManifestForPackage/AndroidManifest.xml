@@ -7,7 +7,6 @@
     <uses-sdk
         android:minSdkVersion="29"
         android:targetSdkVersion="34" />
-
     <!-- Permissions -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -31,7 +30,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.LoginSystem" >
-
+        <activity
+            android:name="com.example.uibasics.AddItemInventory"
+            android:exported="false" />
         <!-- LoginActivity as the launcher activity -->
         <activity
             android:name="com.example.uibasics.LoginActivity"
@@ -41,9 +42,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Other activities -->
+        </activity> <!-- Other activities -->
         <activity
             android:name="com.example.uibasics.SignUpActivity"
             android:exported="false" />
@@ -60,10 +59,8 @@
             android:name="com.example.uibasics.products"
             android:exported="false" />
         <activity
-            android:name="com.example.uibasics.inventory"
-            android:exported="false" />
-
-        <!-- Meta-data -->
+            android:name="com.example.uibasics.Inventory"
+            android:exported="false" /> <!-- Meta-data -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

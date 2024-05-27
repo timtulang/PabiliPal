@@ -24,12 +24,12 @@ public class DatabaseHelperInventory extends SQLiteOpenHelper {
                     COLUMN_PRICE + " REAL, " +
                     COLUMN_STOCK + " INTEGER, " +
                     COLUMN_IMAGE + " BLOB);";
-    private static final String createTriggerQuery = "CREATE TRIGGER IF NOT EXISTS sort_data_trigger " +
-            "AFTER INSERT ON " + TABLE_NAME +
-            " BEGIN " +
-            "    UPDATE " + TABLE_NAME + " SET " + COLUMN_NAME + " = (SELECT " + COLUMN_NAME + " FROM " + TABLE_NAME +
-            " ORDER BY " + COLUMN_NAME + ") WHERE _id = new._id;" +
-            " END;";
+//    private static final String createTriggerQuery = "CREATE TRIGGER IF NOT EXISTS sort_data_trigger " +
+//            "AFTER INSERT ON " + TABLE_NAME +
+//            " BEGIN " +
+//            "    UPDATE " + TABLE_NAME + " SET " + COLUMN_NAME + " = (SELECT " + COLUMN_NAME + " FROM " + TABLE_NAME +
+//            " ORDER BY " + COLUMN_NAME + ") WHERE " + COLUMN_ID + " = new." + COLUMN_ID + ";" +
+//            " END;";
 
     public DatabaseHelperInventory(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -38,7 +38,7 @@ public class DatabaseHelperInventory extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(TABLE_CREATE);
-        db.execSQL(createTriggerQuery);
+//        db.execSQL(createTriggerQuery);
     }
 
 

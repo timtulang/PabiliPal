@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements MenuRecyclerInter
                 startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(this, inventory.class);
+                intent = new Intent(this, Inventory.class);
                 startActivity(intent);
                 break;
             default:

@@ -12,6 +12,8 @@ import java.util.List;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 public class ItemGridAdapter extends BaseAdapter {
 
     Context context;
@@ -110,6 +112,7 @@ public class ItemGridAdapter extends BaseAdapter {
             productName.setText(productNames.get(position));
             productPrice.setText(String.valueOf(productPrices.get(position)));
             productQuantity.setText(String.valueOf(productQuantities.get(position)));
+
         }
 
         return convertView;
