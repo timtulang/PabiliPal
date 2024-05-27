@@ -3760,6 +3760,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_item_inventory
 layout activity_admin
+layout activity_edit_item_inventory
 layout activity_inventory
 layout activity_login
 layout activity_main
