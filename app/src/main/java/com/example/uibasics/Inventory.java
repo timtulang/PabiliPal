@@ -49,7 +49,12 @@ public class Inventory extends AppCompatActivity {
             try {
                 InventoryItem selectedItem = itemsRetrieved.get(position);
                 intent = new Intent(Inventory.this, EditItemInventory.class);
-                intent.putExtra("selectedItem", (Parcelable) selectedItem);
+                Intent selectedItem1 = intent.putExtra("selectedItem", (Parcelable) selectedItem);
+
+
+
+                intent.putExtra("selectedItem", selectedItem);
+
             } catch (IndexOutOfBoundsException e){
                 intent = new Intent(Inventory.this, AddItemInventory.class);
             }
@@ -90,4 +95,6 @@ public class Inventory extends AppCompatActivity {
         gridAdapter = new ItemGridAdapter(Inventory.this, productName, productPrice, quantity, images, true);
         gridView.setAdapter(gridAdapter);
     }
+
+
 }

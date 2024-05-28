@@ -1,6 +1,13 @@
 package com.example.uibasics;
 
-public class InventoryItem {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+import java.io.Serializable;
+
+public class InventoryItem implements Serializable {
     private int id;
     private String name;
     private double price;

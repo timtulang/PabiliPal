@@ -47,6 +47,9 @@
         <activity
             android:name=".Inventory"
             android:exported="false" /> <!-- Meta-data -->
+        <activity
+            android:name=".EditItemInventory"
+            android:exported="false" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

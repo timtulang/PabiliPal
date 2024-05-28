@@ -83,6 +83,7 @@ id soldoutItems
 id textViewDashboard
 layout activity_add_item_inventory
 layout activity_admin
+layout activity_edit_item_inventory
 layout activity_inventory
 layout activity_login
 layout activity_main
