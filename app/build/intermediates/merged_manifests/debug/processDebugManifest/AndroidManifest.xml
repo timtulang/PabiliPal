@@ -51,7 +51,7 @@
             android:name="com.example.uibasics.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.uibasics.products"
+            android:name="com.example.uibasics.ProductCart"
             android:exported="false" />
         <activity
             android:name="com.example.uibasics.Inventory"
@@ -61,6 +61,12 @@
             android:exported="false" />
         <activity
             android:name="com.example.uibasics.SignUpActivityUser"
+            android:exported="false" />
+        <activity
+            android:name="com.example.uibasics.CartSummary"
+            android:exported="false" />
+        <activity
+            android:name="com.example.uibasics.ShoppingCart"
             android:exported="false" />
 
         <meta-data

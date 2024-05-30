@@ -1,10 +1,7 @@
 package com.example.uibasics;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.widget.GridView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +11,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.uibasics.databinding.ActivityInventoryBinding;
 
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,7 +46,7 @@ public class Inventory extends AppCompatActivity {
             try {
                 InventoryItem selectedItem = itemsRetrieved.get(position);
                 intent = new Intent(Inventory.this, EditItemInventory.class);
-                Intent selectedItem1 = intent.putExtra("selectedItem", (Parcelable) selectedItem);
+                Intent selectedItem1 = intent.putExtra("selectedItem", selectedItem);
 
 
 

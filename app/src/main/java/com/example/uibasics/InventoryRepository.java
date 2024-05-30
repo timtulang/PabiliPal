@@ -92,6 +92,40 @@ public class InventoryRepository {
 
         return items;
     }
+    public void addItemToCart(CartItems product) {
+        SQLiteDatabase DB = dbHelper.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("name", product.getName());
+        contentValues.put("price", product.getPrice());
+        contentValues.put("stock", product.getQuantity());
+        contentValues.put("image", product.getImagePath());
+        DB.insertWithOnConflict("Cart", null, contentValues, SQLiteDatabase.CONFLICT_REPLACE);
+    }
+
+    public boolean updateProductQuantity(String name, int newQuantity) {
+        SQLiteDatabase DB = dbHelper.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("stock", newQuantity);
+        int rowsAffected = DB.update("Inventory", contentValues, "name=?", new String[]{name});
+        return rowsAffected > 0;
+    }
+
+    public List<CartItems> getAllProducts() {
+        List<CartItems> productList = new ArrayList<>();
+        SQLiteDatabase DB = dbHelper.getReadableDatabase();
+        Cursor cursor = DB.rawQuery("Select * from Inventory", null);
+        if (cursor.moveToFirst()) {
+            do {
+                String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+                double price = cursor.getDouble(cursor.getColumnIndexOrThrow("price"));
+                int quantity = cursor.getInt(cursor.getColumnIndexOrThrow("stock"));
+                byte[] image = cursor.getBlob(cursor.getColumnIndexOrThrow("image"));
+                productList.add(new CartItems(name, price, quantity, image));
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return productList;
+    }
 
     public void shutDown() {
         executorService.shutdown();

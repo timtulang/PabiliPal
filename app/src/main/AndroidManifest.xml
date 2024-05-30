@@ -37,7 +37,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".products"
+            android:name=".ProductCart"
             android:exported="false" />
         <activity
             android:name=".Inventory"
@@ -47,6 +47,12 @@
             android:exported="false" />
         <activity
             android:name=".SignUpActivityUser"
+            android:exported="false" />
+        <activity
+            android:name=".CartSummary"
+            android:exported="false" />
+        <activity
+            android:name=".ShoppingCart"
             android:exported="false" />
         <meta-data
             android:name="preloaded_fonts"
