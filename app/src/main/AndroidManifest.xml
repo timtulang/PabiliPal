@@ -30,16 +30,10 @@
             </intent-filter>
         </activity> <!-- Other activities -->
         <activity
-            android:name=".SignUpActivity"
+            android:name=".SignUpActivityAdmin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UserActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AdminActivity"
             android:exported="false" />
         <activity
             android:name=".products"
@@ -49,6 +43,9 @@
             android:exported="false" /> <!-- Meta-data -->
         <activity
             android:name=".EditItemInventory"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivityUser"
             android:exported="false" />
         <meta-data
             android:name="preloaded_fonts"

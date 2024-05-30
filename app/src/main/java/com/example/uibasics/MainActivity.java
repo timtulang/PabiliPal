@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements MenuRecyclerInterface{
     ArrayList <MenuItemModel> menuItemModels = new ArrayList<>();
-    int[] menuItemImages = {R.drawable.bag_shopping_solid_1, R.drawable.truck_moving_solid_1};
+    int[] menuItemImages = {R.drawable.bag_shopping_solid_1, R.drawable.truck_moving_solid_1, R.drawable.usercreate, R.drawable.admincreate};
 
 
     @Override
@@ -69,9 +69,20 @@ public class MainActivity extends AppCompatActivity implements MenuRecyclerInter
                 intent = new Intent(this, Inventory.class);
                 startActivity(intent);
                 break;
+            case 2:
+                intent = new Intent(this, SignUpActivityUser.class);
+                startActivity(intent);
+                break;
+            case 3:
+                intent = new Intent(this, SignUpActivityAdmin.class);
+                startActivity(intent);
+                break;
             default:
                 break;
         }
     }
 
 }
+
+// TODO: Navigation Buttons (Back, and X[Close] ) For Chris and Alexi
+// TODO: Implement and Fix Cart System For Pierre and JM

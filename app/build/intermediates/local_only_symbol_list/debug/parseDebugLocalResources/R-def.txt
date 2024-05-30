@@ -17,6 +17,7 @@ color lightblue
 color lightestblue
 color primary
 color white
+drawable admincreate
 drawable bag_shopping_solid_1
 drawable baseline_arrow_drop_down_circle_24
 drawable baseline_lock_24
@@ -38,6 +39,7 @@ drawable pluswhite
 drawable rounded_button
 drawable truck_moving_solid_1
 drawable union
+drawable usercreate
 font poppins
 font poppins_bold
 font poppins_medium
@@ -50,6 +52,7 @@ id addtoInventory
 id appLogo
 id availableItems
 id cardView
+id create_user_label
 id dbRecyclerView
 id decrementStock
 id description
@@ -82,7 +85,7 @@ id signup_user
 id soldoutItems
 id textViewDashboard
 layout activity_add_item_inventory
-layout activity_admin
+layout activity_create_user
 layout activity_edit_item_inventory
 layout activity_inventory
 layout activity_login
@@ -90,7 +93,7 @@ layout activity_main
 layout activity_mainlogin
 layout activity_products
 layout activity_sign_up
-layout activity_user
+layout activity_sign_up_user
 layout grid_item
 layout inventoryaddbutton
 layout menuviewrow

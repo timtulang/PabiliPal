@@ -42,8 +42,17 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 navigateToSignUp();
             }
-        });
+        }); // Create function where if admin user exists, button becomes not visible.
+        if (databaseHelperLogin.isAnyAdmin()) {
+            // Make the button invisible if an admin exists
+            binding.signupRedirectText.setVisibility(View.GONE);
+        } else {
+            // Make the button visible if no admin exists
+            binding.signupRedirectText.setVisibility(View.VISIBLE);
+        }
     }
+
+
 
     private void login() {
         String user = binding.loginUser.getText().toString();
@@ -58,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
         if (databaseHelperLogin.checkUser(user)) {
             if (databaseHelperLogin.checkUserPassword(user, password)) {
                 if (selectedRole.equals("Admin") && databaseHelperLogin.isAdmin(user)) {
-                    navigateToMainActivity(); // TODO DISTINGUISH BETWEEN ADMIN AND USER CAN DO
+                    navigateToAdminActivity(); // Navigate to AdminActivity if the user is an admin
                 } else if (selectedRole.equals("User")) {
                     navigateToMainActivity(); // Navigate to MainActivity for regular users
                 } else {
@@ -73,18 +82,18 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        Intent intent = new Intent(LoginActivity.this, products.class);
         startActivity(intent);
         finish(); // Finish LoginActivity to prevent user from coming back to it when pressing back button
     }
 
     private void navigateToSignUp() {
-        Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+        Intent intent = new Intent(LoginActivity.this, SignUpActivityAdmin.class);
         startActivity(intent);
     }
 
     private void navigateToAdminActivity() {
-        Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish(); // Finish LoginActivity to prevent user from coming back to it when pressing back button
     }
