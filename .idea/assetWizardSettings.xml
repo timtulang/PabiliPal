@@ -337,6 +337,7 @@
                         </option>
                         <option name="values">
                           <map>
+<<<<<<< HEAD
                             <entry key="assetSourceType" value="FILE" />
 <<<<<<< HEAD
                             <entry key="color" value="83b0e1" />
@@ -346,6 +347,11 @@
                             <entry key="outputName" value="noimage" />
                             <entry key="sourceFile" value="C:\Users\tulan\Downloads\Group 4943.svg" />
 >>>>>>> PRODUCTS
+=======
+                            <entry key="color" value="83b0e1" />
+                            <entry key="outputName" value="admincreate" />
+                            <entry key="sourceFile" value="C:\Users\Hardy\Downloads\User.svg" />
+>>>>>>> parent of 91473e0 (Login System V2.1)
                           </map>
                         </option>
                       </PersistentState>
