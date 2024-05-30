@@ -9,185 +9,179 @@
 9        android:targetSdkVersion="34" />
 10    <!-- Permissions -->
 11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-11-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:6:5-81
-11-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:6:22-78
+11-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:6:5-81
+11-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:6:22-78
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:7:5-80
-12-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:7:22-77
+12-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:7:5-80
+12-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:7:22-77
 13
 14    <permission
-14-->[androidx.core:core:1.9.0] C:\Users\tulan\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.9.0] C:\Users\Hardy\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 15        android:name="com.example.uibasics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.9.0] C:\Users\tulan\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.9.0] C:\Users\Hardy\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.9.0] C:\Users\tulan\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.9.0] C:\Users\Hardy\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="com.example.uibasics.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.9.0] C:\Users\tulan\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.9.0] C:\Users\tulan\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.9.0] C:\Users\Hardy\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\Hardy\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-56:19
+20-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:9:5-53:19
 21        android:allowBackup="true"
-21-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:10:9-35
+21-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:10:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.9.0] C:\Users\tulan\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22-->[androidx.core:core:1.9.0] C:\Users\Hardy\.gradle\caches\transforms-3\b88084b88231bd19a287067b2b52e8ec\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:11:9-65
+23-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:11:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:12:9-54
+26-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:12:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:13:9-43
+27-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:13:9-43
 28        android:label="@string/app_name"
-28-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:14:9-41
+28-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:14:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:15:9-54
+29-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:15:9-54
 30        android:supportsRtl="true"
-30-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:16:9-35
+30-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:16:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.LoginSystem" >
-32-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:17:9-49
+32-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:17:9-49
 33        <activity
-33-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:19:9-21:40
+33-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:19:9-21:40
 34            android:name="com.example.uibasics.AddItemInventory"
-34-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:20:13-45
+34-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:20:13-45
 35            android:exported="false" />
-35-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:21:13-37
+35-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:21:13-37
 36        <!-- LoginActivity as the launcher activity -->
 37        <activity
-37-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:23:9-31:20
+37-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:23:9-31:20
 38            android:name="com.example.uibasics.LoginActivity"
-38-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:24:13-42
+38-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:24:13-42
 39            android:exported="true" >
-39-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:25:13-36
+39-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:25:13-36
 40            <intent-filter>
-40-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:26:13-30:29
+40-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:26:13-30:29
 41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:27:17-69
-41-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:27:25-66
+41-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:27:17-69
+41-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:27:25-66
 42
 43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:29:17-77
-43-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:29:27-74
+43-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:29:17-77
+43-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:29:27-74
 44            </intent-filter>
 45        </activity> <!-- Other activities -->
 46        <activity
-46-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:32:9-34:40
-47            android:name="com.example.uibasics.SignUpActivity"
-47-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:33:13-43
+46-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:32:9-34:40
+47            android:name="com.example.uibasics.SignUpActivityAdmin"
+47-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:33:13-48
 48            android:exported="false" />
-48-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:34:13-37
+48-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:34:13-37
 49        <activity
-49-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:35:9-37:40
+49-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:35:9-37:40
 50            android:name="com.example.uibasics.MainActivity"
-50-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:36:13-41
+50-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:36:13-41
 51            android:exported="false" />
-51-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:37:13-37
+51-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:37:13-37
 52        <activity
-52-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:38:9-40:40
-53            android:name="com.example.uibasics.UserActivity"
-53-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:39:13-41
+52-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:38:9-40:40
+53            android:name="com.example.uibasics.products"
+53-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:39:13-37
 54            android:exported="false" />
-54-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:40:13-37
+54-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:40:13-37
 55        <activity
-55-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:41:9-43:40
-56            android:name="com.example.uibasics.AdminActivity"
-56-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:42:13-42
-57            android:exported="false" />
-57-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:43:13-37
+55-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:41:9-43:40
+56            android:name="com.example.uibasics.Inventory"
+56-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:42:13-38
+57            android:exported="false" /> <!-- Meta-data -->
+57-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:43:13-37
 58        <activity
-58-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:44:9-46:40
-59            android:name="com.example.uibasics.products"
-59-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:45:13-37
+58-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:44:9-46:40
+59            android:name="com.example.uibasics.EditItemInventory"
+59-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:45:13-46
 60            android:exported="false" />
-60-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:46:13-37
+60-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:46:13-37
 61        <activity
-61-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:47:9-49:40
-62            android:name="com.example.uibasics.Inventory"
-62-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:48:13-38
-63            android:exported="false" /> <!-- Meta-data -->
-63-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:49:13-37
-64        <activity
-64-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:50:9-52:40
-65            android:name="com.example.uibasics.EditItemInventory"
-65-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:51:13-46
-66            android:exported="false" />
-66-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:52:13-37
-67
-68        <meta-data
-68-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:53:9-55:57
-69            android:name="preloaded_fonts"
-69-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:54:13-43
-70            android:resource="@array/preloaded_fonts" />
-70-->C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:55:13-54
-71
-72        <provider
-72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-73            android:name="androidx.startup.InitializationProvider"
-73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-74            android:authorities="com.example.uibasics.androidx-startup"
-74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-75            android:exported="false" >
-75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+61-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:47:9-49:40
+62            android:name="com.example.uibasics.SignUpActivityUser"
+62-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:48:13-47
+63            android:exported="false" />
+63-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:49:13-37
+64
+65        <meta-data
+65-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:50:9-52:57
+66            android:name="preloaded_fonts"
+66-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:51:13-43
+67            android:resource="@array/preloaded_fonts" />
+67-->C:\Users\Hardy\OneDrive\Desktop\PabiliPal\app\src\main\AndroidManifest.xml:52:13-54
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+71            android:authorities="com.example.uibasics.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hardy\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 76            <meta-data
-76-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+76-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Hardy\.gradle\caches\transforms-3\3885de7994411a9a804c4555d88370af\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Hardy\.gradle\caches\transforms-3\3885de7994411a9a804c4555d88370af\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 78                android:value="androidx.startup" />
-78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tulan\.gradle\caches\transforms-3\410b8cb19be7bfcefdf9586f064a7a12\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+78-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Hardy\.gradle\caches\transforms-3\3885de7994411a9a804c4555d88370af\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
 79            <meta-data
-79-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\tulan\.gradle\caches\transforms-3\3885de7994411a9a804c4555d88370af\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-80-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\tulan\.gradle\caches\transforms-3\3885de7994411a9a804c4555d88370af\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 81                android:value="androidx.startup" />
-81-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\tulan\.gradle\caches\transforms-3\3885de7994411a9a804c4555d88370af\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-82            <meta-data
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-83                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-84                android:value="androidx.startup" />
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-85        </provider>
-86
-87        <receiver
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-88            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-89            android:directBootAware="false"
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-90            android:enabled="true"
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-91            android:exported="true"
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-92            android:permission="android.permission.DUMP" >
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+82        </provider>
+83
+84        <receiver
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+86            android:directBootAware="false"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+87            android:enabled="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+88            android:exported="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+89            android:permission="android.permission.DUMP" >
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+92            </intent-filter>
 93            <intent-filter>
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-94                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+94                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 95            </intent-filter>
 96            <intent-filter>
-96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-97                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+97                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 98            </intent-filter>
 99            <intent-filter>
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-100                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+100                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Hardy\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 101            </intent-filter>
-102            <intent-filter>
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-103                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tulan\.gradle\caches\transforms-3\dee77423cae074183d78520abd0bdd8d\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-104            </intent-filter>
-105        </receiver>
-106    </application>
-107
-108</manifest>
+102        </receiver>
+103    </application>
+104
+105</manifest>

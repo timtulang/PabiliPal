@@ -60,4 +60,14 @@ class DatabaseHelperLogin extends SQLiteOpenHelper {
         cursor.close();
         return count > 0;
     }
+
+    public boolean isAnyAdmin() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query("allusers", null, "role=?", new String[]{"Admin"}, null, null, null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count > 0;
+    }
+
+
 }

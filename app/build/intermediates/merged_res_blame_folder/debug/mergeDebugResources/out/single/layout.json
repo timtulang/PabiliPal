@@ -1,54 +1,78 @@
 [
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_add_item_inventory.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_add_item_inventory.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_mainlogin.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_mainlogin.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_admin.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_admin.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_inventory.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_inventory.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\menuviewrow.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\menuviewrow.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_create_user.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_create_user.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_inventory.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_inventory.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_add_item_inventory.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_add_item_inventory.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_products.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_products.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\grid_item.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\grid_item.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\recyclerview_item.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\recyclerview_item.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_edit_item_inventory.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_edit_item_inventory.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\user_item.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\user_item.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\grid_item.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\grid_item.xml"
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_sign_up.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_user.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_user.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_products.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_products.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\inventoryaddbutton.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\inventoryaddbutton.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_user.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_user.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_edit_item_inventory.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_edit_item_inventory.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_mainlogin.xml",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_mainlogin.xml"
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_admin.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_sign_up_user.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up_user.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_create_user.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_create_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\inventoryaddbutton.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\inventoryaddbutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\menuviewrow.xml",
+        "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\menuviewrow.xml"
     }
 ]

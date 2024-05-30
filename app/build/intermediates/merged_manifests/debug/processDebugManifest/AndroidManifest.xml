@@ -44,16 +44,10 @@
             </intent-filter>
         </activity> <!-- Other activities -->
         <activity
-            android:name="com.example.uibasics.SignUpActivity"
+            android:name="com.example.uibasics.SignUpActivityAdmin"
             android:exported="false" />
         <activity
             android:name="com.example.uibasics.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.uibasics.UserActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.uibasics.AdminActivity"
             android:exported="false" />
         <activity
             android:name="com.example.uibasics.products"
@@ -63,6 +57,9 @@
             android:exported="false" /> <!-- Meta-data -->
         <activity
             android:name="com.example.uibasics.EditItemInventory"
+            android:exported="false" />
+        <activity
+            android:name="com.example.uibasics.SignUpActivityUser"
             android:exported="false" />
 
         <meta-data
