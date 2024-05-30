@@ -63,9 +63,9 @@ public class AddItemInventory extends AppCompatActivity {
             if (validateInputs(prodName, prodPriceString, prodStockString)) {
                 double prodPrice = Double.parseDouble(prodPriceString);
                 int prodStock = Integer.parseInt(prodStockString);
-                if(itemImage == null){
+
                     itemImage = imgPlaceholder.convertPNGToByteArray(AddItemInventory.this, R.drawable.noimage);
-                }
+
                 inventory.addItem(prodName, prodPrice, prodStock, itemImage);
 
                 setResult(RESULT_OK);
