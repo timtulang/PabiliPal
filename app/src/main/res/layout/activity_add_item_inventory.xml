@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".AddItemInventory">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/addImage"
         android:layout_width="500dp"
         android:layout_height="500dp"
-        app:srcCompat="@drawable/placeholder"
+        app:srcCompat="@drawable/placeholder_square"
         android:layout_centerHorizontal="true"/>
 
     <EditText

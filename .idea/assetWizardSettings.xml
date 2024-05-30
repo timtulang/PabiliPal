@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\tulan\Downloads\01 Images\Placeholder.png" />
+                                                <entry key="imagePath" value="C:\Users\tulan\Downloads\noimage.png" />
                                                 <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
@@ -71,8 +71,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\tulan\Downloads\01 Images\Placeholder.png" />
-                                      <entry key="outputName" value="ic_products" />
+                                      <entry key="imageAsset" value="C:\Users\tulan\Downloads\noimage.png" />
+                                      <entry key="outputName" value="noimage" />
                                       <entry key="theme" value="HOLO_DARK" />
                                       <entry key="themeColor" value="545454" />
                                     </map>
@@ -338,9 +338,14 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
+<<<<<<< HEAD
                             <entry key="color" value="83b0e1" />
                             <entry key="outputName" value="admincreate" />
                             <entry key="sourceFile" value="C:\Users\Hardy\Downloads\user-shield-solid.svg" />
+=======
+                            <entry key="outputName" value="noimage" />
+                            <entry key="sourceFile" value="C:\Users\tulan\Downloads\Group 4943.svg" />
+>>>>>>> PRODUCTS
                           </map>
                         </option>
                       </PersistentState>

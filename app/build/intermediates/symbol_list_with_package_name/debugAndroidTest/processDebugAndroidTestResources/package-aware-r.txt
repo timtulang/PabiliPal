@@ -1,3 +1,0 @@
-com.example.uibasics.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

@@ -36,7 +36,8 @@
         <!-- LoginActivity as the launcher activity -->
         <activity
             android:name="com.example.uibasics.LoginActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.LoginSystem" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,8 +45,14 @@
             </intent-filter>
         </activity> <!-- Other activities -->
         <activity
+<<<<<<< HEAD
             android:name="com.example.uibasics.SignUpActivityAdmin"
             android:exported="false" />
+=======
+            android:name="com.example.uibasics.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LoginSystem" />
+>>>>>>> PRODUCTS
         <activity
             android:name="com.example.uibasics.MainActivity"
             android:exported="false" />

@@ -3084,6 +3084,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable noimage
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3097,8 +3098,10 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable placeholder
+drawable placeholder_square
 drawable pluswhite
 drawable rounded_button
+drawable roundedcorners
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3214,6 +3217,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_cancel
+id btn_confirm
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3263,6 +3268,7 @@ id decelerateAndComplete
 id decor_content_parent
 id decrementStock
 id default_activity_button
+id deleteItem
 id deltaRelative
 id dependency_ordering
 id description
@@ -3599,6 +3605,7 @@ id textStart
 id textTop
 id textViewDashboard
 id textWatcher
+id text_confirm_message
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3770,7 +3777,12 @@ layout activity_main
 layout activity_mainlogin
 layout activity_products
 layout activity_sign_up
+<<<<<<< HEAD
 layout activity_sign_up_user
+=======
+layout activity_user
+layout confirmdelete
+>>>>>>> PRODUCTS
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

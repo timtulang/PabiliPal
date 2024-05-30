@@ -42,6 +42,7 @@ public class Inventory extends AppCompatActivity {
         inventoryRepository = new InventoryRepository(Inventory.this);
         gridView = findViewById(R.id.availableItems);
 
+
         loadItems();
 
         gridView.setOnItemClickListener((parent, view, position, id) -> {

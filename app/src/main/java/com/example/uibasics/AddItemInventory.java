@@ -1,25 +1,33 @@
 package com.example.uibasics;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class AddItemInventory extends AppCompatActivity {
 
     int stock = 0;
     InventoryRepository inventory = new InventoryRepository(AddItemInventory.this);
+    ImageHelper imageHelper = new ImageHelper();
+    ConvertPNGtoByteArray imgPlaceholder = new ConvertPNGtoByteArray();
+    private static final int REQUEST_IMAGE_CAPTURE = 101;
+    private static final int REQUEST_IMAGE_PICK = 102;
+    byte[] itemImage;
+    ImageButton addImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +39,7 @@ public class AddItemInventory extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        ImageView addImage = findViewById(R.id.addImage);
+        ImageButton addImage = findViewById(R.id.addImage);
         EditText productName = findViewById(R.id.productName);
         EditText productPrice = findViewById(R.id.productPrice);
         EditText addStock = findViewById(R.id.addStock);
@@ -40,10 +47,10 @@ public class AddItemInventory extends AppCompatActivity {
         ImageButton incrementStock = findViewById(R.id.incrementStock);
         Button addItem = findViewById(R.id.addtoInventory);
 
+
         decrementStock.setOnClickListener(v -> decreaseStock(addStock));
         incrementStock.setOnClickListener(v -> increaseStock(addStock));
 
-        final Bitmap bm = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888);
 
 
         addItem.setOnClickListener(v -> {
@@ -51,28 +58,58 @@ public class AddItemInventory extends AppCompatActivity {
             String prodPriceString = productPrice.getText().toString();
             String prodStockString = addStock.getText().toString();
 
-            Log.d("AddItemInventory", "Add Item button clicked");
 
 
             if (validateInputs(prodName, prodPriceString, prodStockString)) {
                 double prodPrice = Double.parseDouble(prodPriceString);
                 int prodStock = Integer.parseInt(prodStockString);
-                byte[] placeholderImage = generatePlaceholderByteArray();
-                inventory.addItem(prodName, prodPrice, prodStock, placeholderImage);
-                Log.d("validateInputs", "Add Item button clicked");
+                if(itemImage == null){
+                    itemImage = imgPlaceholder.convertPNGToByteArray(AddItemInventory.this, R.drawable.noimage);
+                }
+                inventory.addItem(prodName, prodPrice, prodStock, itemImage);
 
                 setResult(RESULT_OK);
                 finish();
             }
         });
+        addImage.setOnClickListener(v -> {
+            ImageHelper.openImageChooser(AddItemInventory.this);
+            if (itemImage != null){
+                Bitmap bitmap = BitmapFactory.decodeByteArray(itemImage, 0 , itemImage.length);
+            }
+        });
     }
-    public static byte[] generatePlaceholderByteArray() {
-        Bitmap placeholderBitmap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888);
-        placeholderBitmap.eraseColor(android.graphics.Color.GRAY); // Fill with a solid color
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        placeholderBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-        return stream.toByteArray();
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == REQUEST_IMAGE_CAPTURE) {
+                Bitmap imageBitmap = (Bitmap) data.getExtras().get("data");
+
+                itemImage = imageHelper.bitmapToByteArray(imageBitmap);
+
+                Log.d("ImageDimensions", "Width: " + imageBitmap.getWidth() + ", Height: " + imageBitmap.getHeight());
+
+                addImage.setImageBitmap(imageBitmap);
+            } else if (requestCode == REQUEST_IMAGE_PICK) {
+                Uri imageUri = data.getData();
+                try {
+                    InputStream inputStream = getContentResolver().openInputStream(imageUri);
+                    itemImage = imageHelper.inputStreamToByteArray(inputStream);
+
+                    Bitmap imageBitmap = BitmapFactory.decodeStream(inputStream);
+
+                    Log.d("ImageDimensions", "Width: " + imageBitmap.getWidth() + ", Height: " + imageBitmap.getHeight());
+                    addImage.setImageBitmap(imageBitmap);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
     }
+
 
 
     private void decreaseStock(EditText addStock) {
@@ -99,4 +136,6 @@ public class AddItemInventory extends AppCompatActivity {
         }
         return true;
     }
+
+
 }

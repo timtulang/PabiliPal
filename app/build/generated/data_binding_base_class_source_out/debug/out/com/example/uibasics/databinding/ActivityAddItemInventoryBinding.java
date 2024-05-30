@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,7 +23,7 @@ public final class ActivityAddItemInventoryBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageView addImage;
+  public final ImageButton addImage;
 
   @NonNull
   public final EditText addStock;
@@ -57,7 +56,7 @@ public final class ActivityAddItemInventoryBinding implements ViewBinding {
   public final EditText productPrice;
 
   private ActivityAddItemInventoryBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView addImage, @NonNull EditText addStock, @NonNull Button addtoInventory,
+      @NonNull ImageButton addImage, @NonNull EditText addStock, @NonNull Button addtoInventory,
       @NonNull ImageButton decrementStock, @NonNull ImageButton incrementStock,
       @NonNull TextView labelProdName, @NonNull TextView labelProdPrice,
       @NonNull TextView labelProdStock, @NonNull RelativeLayout main, @NonNull EditText productName,
@@ -104,7 +103,7 @@ public final class ActivityAddItemInventoryBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.addImage;
-      ImageView addImage = ViewBindings.findChildViewById(rootView, id);
+      ImageButton addImage = ViewBindings.findChildViewById(rootView, id);
       if (addImage == null) {
         break missingId;
       }

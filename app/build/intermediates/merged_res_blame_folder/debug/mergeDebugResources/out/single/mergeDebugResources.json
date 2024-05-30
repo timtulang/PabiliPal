@@ -16,8 +16,17 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\font\\poppins_medium.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-xxxhdpi_noimage.png.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-xxxhdpi\\noimage.png"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_baseline_password_24.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\baseline_password_24.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -52,8 +61,17 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_baseline_person_24.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\baseline_person_24.xml"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-hdpi_noimage.png.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-hdpi\\noimage.png"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_circlebuttonbg.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\circlebuttonbg.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-anydpi_ic_launcher_round.xml.flat",
@@ -64,36 +82,68 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\xml\\backup_rules.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_edit_item_inventory.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_edit_item_inventory.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\baseline_lock_24.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_et_bgstyle2.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\et_bgstyle2.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\font_poppins.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\font\\poppins.xml"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_roundedcorners.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\roundedcorners.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_chart_line_solid_1.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\chart_line_solid_1.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_blue_border.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\blue_border.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_recyclerview_item.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\recyclerview_item.xml"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-xhdpi_noimage.png.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-xhdpi\\noimage.png"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_minus.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\minus.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_baseline_lock_24.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\baseline_lock_24.xml"
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_pluswhite.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\pluswhite.xml"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_truck_moving_solid_1.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\truck_moving_solid_1.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_create_user.xml.flat",
@@ -104,8 +154,21 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_products.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_chart_line_solid_1.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\chart_line_solid_1.xml"
+=======
+        "merged": "com.example.uibasics.app-debug-33:/drawable_noimage.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/noimage.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-xxhdpi_noimage.png.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-xxhdpi\\noimage.png"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\ic_launcher_foreground.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -164,8 +227,17 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\usercreate.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\font_poppins_bold.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\font\\poppins_bold.xml"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_confirmdelete.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\confirmdelete.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_buttonshape.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\buttonshape.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -176,8 +248,17 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_inventory.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_user_item.xml.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\user_item.xml"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_placeholder_square.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\placeholder_square.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_add_item_inventory.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_add_item_inventory.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_admin.xml.flat",
@@ -208,8 +289,17 @@
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\admincreate.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
+=======
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-mdpi_noimage.png.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-mdpi\\noimage.png"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_user.xml"
+>>>>>>> PRODUCTS
     },
     {
         "merged": "C:\\Users\\Hardy\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-hdpi_ic_products.png.flat",
