@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,62 +8,106 @@
     tools:context=".products">
 
     <TextView
-        android:id="@+id/screenTitle"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
         android:text="PRODUCTS"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/appLogo"
-        android:textSize="35sp"
-        android:layout_marginTop="14dp"
-        tools:layout_editor_absoluteX="341dp"
-        tools:layout_editor_absoluteY="585dp" />
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
 
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#83b1e0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        app:srcCompat="@drawable/slider" />
 
     <EditText
-        android:id="@+id/searchBar"
-        android:layout_width="714dp"
+        android:id="@+id/editTextText2"
+        android:layout_width="660dp"
         android:layout_height="67dp"
-        android:layout_marginTop="24dp"
         android:background="@drawable/et_bgstyle"
-        android:elevation="8dp"
+        android:elevation="10dp"
         android:hint="Search"
+        android:inputType="text"
         android:padding="20dp"
-        android:layout_below="@+id/screenTitle"
-        android:layout_centerHorizontal="true" />
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="600dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#83b1e0"
+        android:text="View Cart"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 
     <GridView
-        android:id="@+id/availableItems"
+        android:id="@+id/cartGridView"
+        android:layout_width="743dp"
+        android:layout_height="680dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="15dp"
         android:numColumns="3"
-        android:horizontalSpacing="20dp"
-        android:verticalSpacing="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="3in"
-        android:layout_margin="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/searchBar"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"/>
+        android:paddingTop="20dp"
+        android:verticalSpacing="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
 
-    <GridView
-        android:id="@+id/soldoutItems"
-        android:numColumns="auto_fit"
-        android:columnWidth="100dp"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/availableItems"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="50dp"/>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

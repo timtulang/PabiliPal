@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void navigateToMainActivity() {
-        Intent intent = new Intent(LoginActivity.this, products.class);
+        Intent intent = new Intent(LoginActivity.this, ProductCart.class);
         startActivity(intent);
         finish(); // Finish LoginActivity to prevent user from coming back to it when pressing back button
     }

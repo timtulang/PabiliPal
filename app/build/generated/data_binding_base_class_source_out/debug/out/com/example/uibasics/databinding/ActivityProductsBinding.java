@@ -4,13 +4,14 @@ package com.example.uibasics.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.uibasics.R;
@@ -20,41 +21,51 @@ import java.lang.String;
 
 public final class ActivityProductsBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView appLogo;
+  public final Button button2;
 
   @NonNull
-  public final GridView availableItems;
+  public final GridView cartGridView;
 
   @NonNull
-  public final RelativeLayout main;
+  public final EditText editTextText2;
 
   @NonNull
-  public final TextView screenTitle;
+  public final ImageButton imageButton3;
 
   @NonNull
-  public final EditText searchBar;
+  public final ImageButton imageButton6;
 
   @NonNull
-  public final GridView soldoutItems;
+  public final ImageButton imageButton9;
 
-  private ActivityProductsBinding(@NonNull RelativeLayout rootView, @NonNull ImageView appLogo,
-      @NonNull GridView availableItems, @NonNull RelativeLayout main, @NonNull TextView screenTitle,
-      @NonNull EditText searchBar, @NonNull GridView soldoutItems) {
+  @NonNull
+  public final ConstraintLayout main;
+
+  @NonNull
+  public final TextView textView;
+
+  private ActivityProductsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
+      @NonNull GridView cartGridView, @NonNull EditText editTextText2,
+      @NonNull ImageButton imageButton3, @NonNull ImageButton imageButton6,
+      @NonNull ImageButton imageButton9, @NonNull ConstraintLayout main,
+      @NonNull TextView textView) {
     this.rootView = rootView;
-    this.appLogo = appLogo;
-    this.availableItems = availableItems;
+    this.button2 = button2;
+    this.cartGridView = cartGridView;
+    this.editTextText2 = editTextText2;
+    this.imageButton3 = imageButton3;
+    this.imageButton6 = imageButton6;
+    this.imageButton9 = imageButton9;
     this.main = main;
-    this.screenTitle = screenTitle;
-    this.searchBar = searchBar;
-    this.soldoutItems = soldoutItems;
+    this.textView = textView;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -79,40 +90,52 @@ public final class ActivityProductsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.appLogo;
-      ImageView appLogo = ViewBindings.findChildViewById(rootView, id);
-      if (appLogo == null) {
+      id = R.id.button2;
+      Button button2 = ViewBindings.findChildViewById(rootView, id);
+      if (button2 == null) {
         break missingId;
       }
 
-      id = R.id.availableItems;
-      GridView availableItems = ViewBindings.findChildViewById(rootView, id);
-      if (availableItems == null) {
+      id = R.id.cartGridView;
+      GridView cartGridView = ViewBindings.findChildViewById(rootView, id);
+      if (cartGridView == null) {
         break missingId;
       }
 
-      RelativeLayout main = (RelativeLayout) rootView;
-
-      id = R.id.screenTitle;
-      TextView screenTitle = ViewBindings.findChildViewById(rootView, id);
-      if (screenTitle == null) {
+      id = R.id.editTextText2;
+      EditText editTextText2 = ViewBindings.findChildViewById(rootView, id);
+      if (editTextText2 == null) {
         break missingId;
       }
 
-      id = R.id.searchBar;
-      EditText searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
+      id = R.id.imageButton3;
+      ImageButton imageButton3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton3 == null) {
         break missingId;
       }
 
-      id = R.id.soldoutItems;
-      GridView soldoutItems = ViewBindings.findChildViewById(rootView, id);
-      if (soldoutItems == null) {
+      id = R.id.imageButton6;
+      ImageButton imageButton6 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton6 == null) {
         break missingId;
       }
 
-      return new ActivityProductsBinding((RelativeLayout) rootView, appLogo, availableItems, main,
-          screenTitle, searchBar, soldoutItems);
+      id = R.id.imageButton9;
+      ImageButton imageButton9 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton9 == null) {
+        break missingId;
+      }
+
+      ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      return new ActivityProductsBinding((ConstraintLayout) rootView, button2, cartGridView,
+          editTextText2, imageButton3, imageButton6, imageButton9, main, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

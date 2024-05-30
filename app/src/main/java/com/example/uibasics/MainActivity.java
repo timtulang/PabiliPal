@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements MenuRecyclerInter
         Intent intent;
         switch (position){
             case 0:
-                intent = new Intent(this, products.class);
+                intent = new Intent(this, ProductCart.class);
                 startActivity(intent);
                 break;
             case 1:
