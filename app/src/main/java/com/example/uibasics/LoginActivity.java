@@ -2,6 +2,7 @@ package com.example.uibasics;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
@@ -14,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private ActivityLoginBinding binding;
     private DatabaseHelperLogin databaseHelperLogin;
+    private static final String TAG = "LoginActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,22 +44,22 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 navigateToSignUp();
             }
-        }); // Create function where if admin user exists, button becomes not visible.
+        });
+
+        // Check if any admin exists and hide signup redirect if true
         if (databaseHelperLogin.isAnyAdmin()) {
-            // Make the button invisible if an admin exists
             binding.signupRedirectText.setVisibility(View.GONE);
         } else {
-            // Make the button visible if no admin exists
             binding.signupRedirectText.setVisibility(View.VISIBLE);
         }
     }
 
-
-
     private void login() {
-        String user = binding.loginUser.getText().toString();
-        String password = binding.loginPassword.getText().toString();
-        String selectedRole = binding.roleSpinner.getSelectedItem().toString();
+        String user = binding.loginUser.getText().toString().trim();
+        String password = binding.loginPassword.getText().toString().trim();
+        String selectedRole = binding.roleSpinner.getSelectedItem().toString().trim();
+
+        Log.d(TAG, "User: " + user + ", Password: " + password + ", Selected Role: " + selectedRole);
 
         if (user.isEmpty() || password.isEmpty()) {
             Toast.makeText(LoginActivity.this, "Please fill out all input fields", Toast.LENGTH_SHORT).show();
@@ -67,9 +69,9 @@ public class LoginActivity extends AppCompatActivity {
         if (databaseHelperLogin.checkUser(user)) {
             if (databaseHelperLogin.checkUserPassword(user, password)) {
                 if (selectedRole.equals("Admin") && databaseHelperLogin.isAdmin(user)) {
-                    navigateToAdminActivity(); // Navigate to AdminActivity if the user is an admin
-                } else if (selectedRole.equals("User")) {
-                    navigateToMainActivity(); // Navigate to MainActivity for regular users
+                    navigateToAdminActivity();
+                } else if (selectedRole.equals("User") && !databaseHelperLogin.isAdmin(user)) {
+                    navigateToMainActivity();
                 } else {
                     Toast.makeText(LoginActivity.this, "Invalid role selection", Toast.LENGTH_SHORT).show();
                 }
@@ -84,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
     private void navigateToMainActivity() {
         Intent intent = new Intent(LoginActivity.this, ProductCart.class);
         startActivity(intent);
-        finish(); // Finish LoginActivity to prevent user from coming back to it when pressing back button
+        finish();
     }
 
     private void navigateToSignUp() {
@@ -95,6 +97,6 @@ public class LoginActivity extends AppCompatActivity {
     private void navigateToAdminActivity() {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
-        finish(); // Finish LoginActivity to prevent user from coming back to it when pressing back button
+        finish();
     }
 }

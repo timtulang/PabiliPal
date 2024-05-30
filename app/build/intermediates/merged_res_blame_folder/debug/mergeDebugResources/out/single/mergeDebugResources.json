@@ -48,6 +48,10 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_admincreate.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/admincreate.xml"
+    },
+    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_sign_up_user.xml.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up_user.xml"
     },
@@ -68,20 +72,16 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\usercreate.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_mainlogin.xml.flat",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_mainlogin.xml"
-    },
-    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_et_bgstyle2.xml.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\et_bgstyle2.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_mainlogin.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_mainlogin.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/layout_activity_cart_summary.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_cart_summary.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -224,12 +224,12 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\font\\poppins_semibold.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_white.jpg.flat",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\white.jpg"
-    },
-    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_white.jpg.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\white.jpg"
     },
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_noimage.xml.flat",
@@ -264,10 +264,6 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\placeholder_square.xml"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_cart.xml.flat",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\cart.xml"
-    },
-    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_add_item_inventory.xml.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_add_item_inventory.xml"
     },
@@ -280,20 +276,24 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\font\\poppins.xml"
     },
     {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_cart.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\cart.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/drawable_usercreate.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/drawable/usercreate.xml"
+    },
+    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/layout_activity_shopping_cart.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_shopping_cart.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_whiteboxrad.xml.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\whiteboxrad.xml"
-    },
-    {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_pluswhite.xml.flat",
@@ -312,12 +312,12 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_products.xml.flat",
-        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_products.xml"
-    },
-    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_admincreate.xml.flat",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\admincreate.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_products.xml.flat",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_products.xml"
     },
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_main.xml.flat",
