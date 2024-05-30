@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,9 +53,15 @@ public class ShoppingCart extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CartManager.getInstance(ShoppingCart.this).checkout(ShoppingCart.this);
-                Intent intent = new Intent(ShoppingCart.this, CartSummary.class);
-                startActivity(intent);
+                boolean success = CartManager.getInstance(ShoppingCart.this).checkout(ShoppingCart.this);
+                if (success) {
+                    Intent intent = new Intent(ShoppingCart.this, CartSummary.class);
+                    startActivity(intent);
+                } else {
+                    // Optionally, show a message to the user about the insufficient stock
+                    Toast.makeText(ShoppingCart.this, "Insufficient stock for one or more items.", Toast.LENGTH_LONG).show();
+                    // Return to the previous activity with the same cart values
+                }
             }
         });
 

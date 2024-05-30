@@ -87,13 +87,19 @@ public class CartManager {
         return checkedOutItems;
     }
 
-    public void checkout(Context context) {
+    public boolean checkout(Context context) {
         DatabaseHelperInventory dbHelper = new DatabaseHelperInventory(context);
         InventoryRepository cartOperations = new InventoryRepository(context);
         for (CartItems product : cartItems) {
             Cursor cursor = dbHelper.getReadableDatabase().rawQuery("SELECT stock FROM Inventory WHERE name = ?", new String[]{product.getName()});
             if (cursor.moveToFirst()) {
                 int currentStock = cursor.getInt(cursor.getColumnIndexOrThrow("stock"));
+                if (currentStock < product.getQuantity()) {
+                    // Notify user or log the issue
+                    System.out.println("Insufficient stock for product: " + product.getName());
+                    cursor.close();
+                    return false;  // Cancel the checkout process
+                }
                 int newStock = currentStock - product.getQuantity();
                 cartOperations.updateProductQuantity(product.getName(), newStock);
             }
@@ -102,5 +108,6 @@ public class CartManager {
         checkedOutItems.clear();
         checkedOutItems.addAll(cartItems);
         clearCart();
+        return true;  // Checkout successful
     }
 }

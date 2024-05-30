@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
 
     private List<CartItems> cartItems;
@@ -39,6 +40,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         holder.priceTextView.setText("₱" + product.getTotalPrice());
         holder.quantityEditText.setText(String.valueOf(product.getQuantity()));
         holder.imageView.setImageResource(R.drawable.noimg);
+
 
         holder.increaseButton.setOnClickListener(v -> {
             int newQuantity = product.getQuantity() + 1;

@@ -15,6 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -63,10 +64,7 @@ public class AddItemInventory extends AppCompatActivity {
             if (validateInputs(prodName, prodPriceString, prodStockString)) {
                 double prodPrice = Double.parseDouble(prodPriceString);
                 int prodStock = Integer.parseInt(prodStockString);
-                if(itemImage == null){
-                    itemImage = imgPlaceholder.convertPNGToByteArray(AddItemInventory.this, R.drawable.noimage);
-                }
-                inventory.addItem(prodName, prodPrice, prodStock, itemImage);
+                inventory.addItem(prodName, prodPrice, prodStock, generatePlaceholderByteArray());
 
                 setResult(RESULT_OK);
                 finish();
@@ -108,6 +106,14 @@ public class AddItemInventory extends AppCompatActivity {
             }
 
         }
+    }
+
+    private byte[] generatePlaceholderByteArray() {
+        Bitmap placeholderBitmap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888);
+        placeholderBitmap.eraseColor(android.graphics.Color.GRAY); // Fill with a solid color
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        placeholderBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        return stream.toByteArray();
     }
 
 
