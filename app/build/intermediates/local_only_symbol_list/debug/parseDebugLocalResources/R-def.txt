@@ -100,12 +100,8 @@ layout activity_main
 layout activity_mainlogin
 layout activity_products
 layout activity_sign_up
-<<<<<<< HEAD
 layout activity_sign_up_user
-=======
-layout activity_user
 layout confirmdelete
->>>>>>> PRODUCTS
 layout grid_item
 layout inventoryaddbutton
 layout menuviewrow

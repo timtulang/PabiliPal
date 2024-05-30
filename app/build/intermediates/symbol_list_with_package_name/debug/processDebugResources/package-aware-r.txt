@@ -3777,12 +3777,8 @@ layout activity_main
 layout activity_mainlogin
 layout activity_products
 layout activity_sign_up
-<<<<<<< HEAD
 layout activity_sign_up_user
-=======
-layout activity_user
 layout confirmdelete
->>>>>>> PRODUCTS
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
