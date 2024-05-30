@@ -33,9 +33,12 @@ drawable ic_launcher_foreground
 drawable ic_products
 drawable loginbg2
 drawable minus
+drawable noimage
 drawable placeholder
+drawable placeholder_square
 drawable pluswhite
 drawable rounded_button
+drawable roundedcorners
 drawable truck_moving_solid_1
 drawable union
 font poppins
@@ -49,9 +52,12 @@ id addStock
 id addtoInventory
 id appLogo
 id availableItems
+id btn_cancel
+id btn_confirm
 id cardView
 id dbRecyclerView
 id decrementStock
+id deleteItem
 id description
 id imageView
 id incrementStock
@@ -81,6 +87,7 @@ id signup_password
 id signup_user
 id soldoutItems
 id textViewDashboard
+id text_confirm_message
 layout activity_add_item_inventory
 layout activity_admin
 layout activity_edit_item_inventory
@@ -91,6 +98,7 @@ layout activity_mainlogin
 layout activity_products
 layout activity_sign_up
 layout activity_user
+layout confirmdelete
 layout grid_item
 layout inventoryaddbutton
 layout menuviewrow

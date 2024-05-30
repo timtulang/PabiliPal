@@ -116,6 +116,15 @@
         android:layout_marginTop="7dp"
         android:layout_marginLeft="20dp"
         />
+    <Button
+        android:id="@+id/deleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Item"
+        android:layout_below="@+id/productPrice"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/buttonshape"/>
 
     <LinearLayout
         android:layout_width="match_parent"
