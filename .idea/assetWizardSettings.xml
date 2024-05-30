@@ -337,9 +337,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="83b0e1" />
                             <entry key="outputName" value="admincreate" />
-                            <entry key="sourceFile" value="C:\Users\Hardy\Downloads\User.svg" />
+                            <entry key="sourceFile" value="C:\Users\Hardy\Downloads\user-shield-solid.svg" />
                           </map>
                         </option>
                       </PersistentState>
