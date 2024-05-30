@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-#Thu May 30 19:50:24 SGT 2024
+#Thu May 30 20:23:02 SGT 2024
 base.0=C\:\\Users\\tulan\\AndroidStudioProjects\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\tulan\\AndroidStudioProjects\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\tulan\\AndroidStudioProjects\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
 base.3=C\:\\Users\\tulan\\AndroidStudioProjects\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
 base.4=C\:\\Users\\tulan\\AndroidStudioProjects\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-=======
-#Thu May 30 15:31:41 PST 2024
-base.0=C\:\\Users\\Hardy\\OneDrive\\Desktop\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\Hardy\\OneDrive\\Desktop\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\Hardy\\OneDrive\\Desktop\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\Hardy\\OneDrive\\Desktop\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=C\:\\Users\\Hardy\\OneDrive\\Desktop\\PabiliPal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
->>>>>>> parent of 91473e0 (Login System V2.1)
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex
