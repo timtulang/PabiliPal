@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -55,12 +56,23 @@ public class AddItemToCart extends AppCompatActivity {
             productPrice.setText(String.valueOf(selectedItem.getPrice()));
         }
 
+        ImageButton backButton;
+        backButton = findViewById(R.id.imageButton6);
+        backButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(AddItemToCart.this, ProductCart.class);
+                startActivity(intent);
+            }
+        });
+
         addQuantity.setOnClickListener(v -> incrementStock(quantityText));
         decreaseQuantity.setOnClickListener(v -> decrementStock(quantityText));
 
         addtoCart.setOnClickListener(v -> {
             cartManager.addToCart(selectedItem, quantity);
             Toast.makeText(this, selectedItem.getName() + " added to cart", Toast.LENGTH_SHORT).show();
+            finish();
         });
     }
 

@@ -20,6 +20,10 @@
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\menuviewrow.xml"
     },
     {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_add_item_to_cart.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_add_item_to_cart.xml"
+    },
+    {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_inventory.xml",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_inventory.xml"
     },
@@ -46,10 +50,6 @@
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\item_before_cart.xml",
         "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\item_before_cart.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/item_before_cart.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/item_before_cart.xml"
     },
     {
         "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\cart_summary.xml",

@@ -36,7 +36,7 @@ public final class ActivityAddItemToCartBinding implements ViewBinding {
   public final ImageButton decrementStock;
 
   @NonNull
-  public final ImageButton imageButton7;
+  public final ImageButton imageButton6;
 
   @NonNull
   public final ImageButton incrementStock;
@@ -61,7 +61,7 @@ public final class ActivityAddItemToCartBinding implements ViewBinding {
 
   private ActivityAddItemToCartBinding(@NonNull RelativeLayout rootView,
       @NonNull ImageView addImage, @NonNull EditText addStock, @NonNull Button addtoCart,
-      @NonNull ImageButton decrementStock, @NonNull ImageButton imageButton7,
+      @NonNull ImageButton decrementStock, @NonNull ImageButton imageButton6,
       @NonNull ImageButton incrementStock, @NonNull TextView labelProdName,
       @NonNull TextView labelProdPrice, @NonNull TextView labelProdStock,
       @NonNull RelativeLayout main, @NonNull TextView productName, @NonNull TextView productPrice) {
@@ -70,7 +70,7 @@ public final class ActivityAddItemToCartBinding implements ViewBinding {
     this.addStock = addStock;
     this.addtoCart = addtoCart;
     this.decrementStock = decrementStock;
-    this.imageButton7 = imageButton7;
+    this.imageButton6 = imageButton6;
     this.incrementStock = incrementStock;
     this.labelProdName = labelProdName;
     this.labelProdPrice = labelProdPrice;
@@ -131,9 +131,9 @@ public final class ActivityAddItemToCartBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton7;
-      ImageButton imageButton7 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton7 == null) {
+      id = R.id.imageButton6;
+      ImageButton imageButton6 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton6 == null) {
         break missingId;
       }
 
@@ -176,7 +176,7 @@ public final class ActivityAddItemToCartBinding implements ViewBinding {
       }
 
       return new ActivityAddItemToCartBinding((RelativeLayout) rootView, addImage, addStock,
-          addtoCart, decrementStock, imageButton7, incrementStock, labelProdName, labelProdPrice,
+          addtoCart, decrementStock, imageButton6, incrementStock, labelProdName, labelProdPrice,
           labelProdStock, main, productName, productPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
