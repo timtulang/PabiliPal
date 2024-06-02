@@ -9,17 +9,6 @@
     android:background="#FAFAFA">
 
 
-    <EditText
-        android:id="@+id/searchBar"
-        android:layout_width="714dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/et_bgstyle"
-        android:elevation="8dp"
-        android:hint="Search"
-        android:padding="20dp"
-        android:layout_below="@+id/screenTitle"
-        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/appLogo"
@@ -45,7 +34,7 @@
         android:id="@+id/MenuView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/searchBar"
+        android:layout_below="@+id/screenTitle"
         android:layout_marginTop="30dp"
         android:padding="36dp" />
 

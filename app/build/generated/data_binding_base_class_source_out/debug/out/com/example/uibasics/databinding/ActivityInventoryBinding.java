@@ -4,10 +4,11 @@ package com.example.uibasics.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,23 +30,32 @@ public final class ActivityInventoryBinding implements ViewBinding {
   public final GridView availableItems;
 
   @NonNull
+  public final ImageButton imageButton;
+
+  @NonNull
+  public final ImageButton imageButton9;
+
+  @NonNull
   public final RelativeLayout main;
 
   @NonNull
   public final TextView screenTitle;
 
   @NonNull
-  public final EditText searchBar;
+  public final SearchView searchView;
 
   private ActivityInventoryBinding(@NonNull RelativeLayout rootView, @NonNull ImageView appLogo,
-      @NonNull GridView availableItems, @NonNull RelativeLayout main, @NonNull TextView screenTitle,
-      @NonNull EditText searchBar) {
+      @NonNull GridView availableItems, @NonNull ImageButton imageButton,
+      @NonNull ImageButton imageButton9, @NonNull RelativeLayout main,
+      @NonNull TextView screenTitle, @NonNull SearchView searchView) {
     this.rootView = rootView;
     this.appLogo = appLogo;
     this.availableItems = availableItems;
+    this.imageButton = imageButton;
+    this.imageButton9 = imageButton9;
     this.main = main;
     this.screenTitle = screenTitle;
-    this.searchBar = searchBar;
+    this.searchView = searchView;
   }
 
   @Override
@@ -87,6 +97,18 @@ public final class ActivityInventoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageButton;
+      ImageButton imageButton = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton == null) {
+        break missingId;
+      }
+
+      id = R.id.imageButton9;
+      ImageButton imageButton9 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton9 == null) {
+        break missingId;
+      }
+
       RelativeLayout main = (RelativeLayout) rootView;
 
       id = R.id.screenTitle;
@@ -95,14 +117,14 @@ public final class ActivityInventoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.searchBar;
-      EditText searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
         break missingId;
       }
 
-      return new ActivityInventoryBinding((RelativeLayout) rootView, appLogo, availableItems, main,
-          screenTitle, searchBar);
+      return new ActivityInventoryBinding((RelativeLayout) rootView, appLogo, availableItems,
+          imageButton, imageButton9, main, screenTitle, searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,6 +46,17 @@ public class EditItemInventory extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageButton backButtonEditItem;
+        backButtonEditItem = findViewById(R.id.imageButton5);
+        backButtonEditItem.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(EditItemInventory.this, Inventory.class);
+                startActivity(intent);
+            }
+        });
+
         InventoryRepository inventory = new InventoryRepository(EditItemInventory.this);
 
         Intent intent = getIntent();
@@ -169,8 +181,12 @@ public class EditItemInventory extends AppCompatActivity {
     }
 
     private void decreaseStock(EditText addStock) {
-        stock -= 1;
-        addStock.setText(String.valueOf(stock));
+        if (stock == 0){
+            Toast.makeText(this, "Stock cannot be less than 0", Toast.LENGTH_SHORT).show();
+        } else {
+            stock -= 1;
+            addStock.setText(String.valueOf(stock));
+        }
     }
 
     private void increaseStock(EditText addStock) {

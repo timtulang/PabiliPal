@@ -1,74 +1,82 @@
 [
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_add_item_inventory.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_add_item_inventory.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_sign_up_user.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up_user.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/added_to_cart.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/added_to_cart.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\added_to_cart.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\added_to_cart.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/confirmdelete.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/confirmdelete.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/menuviewrow.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/menuviewrow.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_add_item_inventory.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_add_item_inventory.xml"
     },
     {
         "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_products.xml",
         "source": "com.example.uibasics.app-main-35:/layout/activity_products.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/cart_summary.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/cart_summary.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\confirmdelete.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\confirmdelete.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_cart_summary.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_cart_summary.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\menuviewrow.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\menuviewrow.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_shopping_cart.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_shopping_cart.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_inventory.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_inventory.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_sign_up.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_products.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_products.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_edit_item_inventory.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_edit_item_inventory.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_cart_summary.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_cart_summary.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_create_user.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_create_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_login.xml"
     },
     {
         "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_inventory.xml",
         "source": "com.example.uibasics.app-main-35:/layout/activity_inventory.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/item_before_cart.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/item_before_cart.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\item_before_cart.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\item_before_cart.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/grid_item.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/grid_item.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\cart_summary.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\cart_summary.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_sign_up_user.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_sign_up_user.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_edit_item_inventory.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_edit_item_inventory.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_create_user.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_create_user.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\grid_item.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\grid_item.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/inventoryaddbutton.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/inventoryaddbutton.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_shopping_cart.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_shopping_cart.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_main.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_main.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\inventoryaddbutton.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\inventoryaddbutton.xml"
     },
     {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_login.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_login.xml"
+        "merged": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\tulan\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_main.xml"
     }
 ]

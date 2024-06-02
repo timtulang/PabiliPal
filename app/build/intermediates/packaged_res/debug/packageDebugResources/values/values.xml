@@ -21,8 +21,8 @@
         <item>Create an Admin role that manages sales, stocks, and the creation of Admin and User accounts</item>
     </string-array>
     <string-array name="dashboard_text">
-        <item>Products</item>
-        <item>Inventory</item>
+        <item>Sales and Inventory</item>
+        <item>List of Products</item>
         <item>Create User Account</item>
         <item>Create Admin Account</item>
 
@@ -50,8 +50,8 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">PabiliPal</string>
     <string name="dashboard">Dashboard</string>
-    <string name="inventory">Inventory</string>
-    <string name="products">Products</string>
+    <string name="inventory">List of Products</string>
+    <string name="products">Sales and Inventory</string>
     <style name="Base.Theme.LoginSystem" parent="Theme.Material3.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/blue</item>

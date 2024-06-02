@@ -126,6 +126,22 @@
         android:layout_marginLeft="50dp"
         android:background="@drawable/buttonshape"/>
 
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="709dp"
+        android:layout_weight="1"
+        android:backgroundTint="#fff4fc"
+        app:srcCompat="@drawable/arrow_left_solid" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

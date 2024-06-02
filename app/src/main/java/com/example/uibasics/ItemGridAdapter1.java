@@ -74,6 +74,12 @@ public class ItemGridAdapter1 extends BaseAdapter {
         });
 
         return convertView;
-
     }
+
+    public void updateProductList(List<CartItems> newProductList) {
+        productList.clear();
+        productList.addAll(newProductList);
+        notifyDataSetChanged();
+    }
+
 }

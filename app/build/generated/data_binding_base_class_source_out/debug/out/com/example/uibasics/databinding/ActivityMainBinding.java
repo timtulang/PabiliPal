@@ -4,7 +4,6 @@ package com.example.uibasics.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -34,18 +33,14 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView screenTitle;
 
-  @NonNull
-  public final EditText searchBar;
-
   private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull RecyclerView MenuView,
       @NonNull ImageView appLogo, @NonNull RelativeLayout dbRecyclerView,
-      @NonNull TextView screenTitle, @NonNull EditText searchBar) {
+      @NonNull TextView screenTitle) {
     this.rootView = rootView;
     this.MenuView = MenuView;
     this.appLogo = appLogo;
     this.dbRecyclerView = dbRecyclerView;
     this.screenTitle = screenTitle;
-    this.searchBar = searchBar;
   }
 
   @Override
@@ -95,14 +90,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.searchBar;
-      EditText searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
-        break missingId;
-      }
-
       return new ActivityMainBinding((RelativeLayout) rootView, MenuView, appLogo, dbRecyclerView,
-          screenTitle, searchBar);
+          screenTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

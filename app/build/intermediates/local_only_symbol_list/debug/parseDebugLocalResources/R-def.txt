@@ -20,6 +20,7 @@ color primary
 color white
 drawable admincreate
 drawable app_icon_foreground
+drawable arrow_left_solid
 drawable bag_shopping_solid_1
 drawable baseline_arrow_drop_down_circle_24
 drawable baseline_lock_24
@@ -85,11 +86,14 @@ id decrementStock
 id deleteItem
 id description
 id editTextText
-id editTextText2
+id imageButton
 id imageButton2
 id imageButton3
 id imageButton4
+id imageButton5
 id imageButton6
+id imageButton7
+id imageButton8
 id imageButton9
 id imageView
 id imageView2
@@ -114,7 +118,7 @@ id productPriceItems
 id productQuantityItems
 id role_spinner
 id screenTitle
-id searchBar
+id searchView
 id signupRedirectText
 id signup_button
 id signup_confirm

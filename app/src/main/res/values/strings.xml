@@ -2,12 +2,12 @@
     <string name="app_name">PabiliPal</string>
     <string name="dashboard">Dashboard</string>
 
-    <string name="products">Products</string>
-    <string name="inventory">Inventory</string>
+    <string name="products">Sales and Inventory</string>
+    <string name="inventory">List of Products</string>
 
     <string-array name="dashboard_text">
-        <item>Products</item>
-        <item>Inventory</item>
+        <item>Sales and Inventory</item>
+        <item>List of Products</item>
         <item>Create User Account</item>
         <item>Create Admin Account</item>
 

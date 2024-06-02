@@ -117,6 +117,16 @@
         android:layout_marginLeft="20dp"
         />
 
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="40dp"
+        android:layout_weight="1"
+        android:backgroundTint="#fff4fc"
+        app:srcCompat="@drawable/arrow_left_solid" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

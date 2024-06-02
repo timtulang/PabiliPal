@@ -5,9 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,13 +25,13 @@ public final class ActivityProductsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView appLogo;
+
+  @NonNull
   public final Button button2;
 
   @NonNull
   public final GridView cartGridView;
-
-  @NonNull
-  public final EditText editTextText2;
 
   @NonNull
   public final ImageButton imageButton3;
@@ -39,27 +40,26 @@ public final class ActivityProductsBinding implements ViewBinding {
   public final ImageButton imageButton6;
 
   @NonNull
-  public final ImageButton imageButton9;
+  public final ConstraintLayout main;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final SearchView searchView;
 
   @NonNull
   public final TextView textView;
 
-  private ActivityProductsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull GridView cartGridView, @NonNull EditText editTextText2,
-      @NonNull ImageButton imageButton3, @NonNull ImageButton imageButton6,
-      @NonNull ImageButton imageButton9, @NonNull ConstraintLayout main,
-      @NonNull TextView textView) {
+  private ActivityProductsBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView appLogo,
+      @NonNull Button button2, @NonNull GridView cartGridView, @NonNull ImageButton imageButton3,
+      @NonNull ImageButton imageButton6, @NonNull ConstraintLayout main,
+      @NonNull SearchView searchView, @NonNull TextView textView) {
     this.rootView = rootView;
+    this.appLogo = appLogo;
     this.button2 = button2;
     this.cartGridView = cartGridView;
-    this.editTextText2 = editTextText2;
     this.imageButton3 = imageButton3;
     this.imageButton6 = imageButton6;
-    this.imageButton9 = imageButton9;
     this.main = main;
+    this.searchView = searchView;
     this.textView = textView;
   }
 
@@ -90,6 +90,12 @@ public final class ActivityProductsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appLogo;
+      ImageView appLogo = ViewBindings.findChildViewById(rootView, id);
+      if (appLogo == null) {
+        break missingId;
+      }
+
       id = R.id.button2;
       Button button2 = ViewBindings.findChildViewById(rootView, id);
       if (button2 == null) {
@@ -99,12 +105,6 @@ public final class ActivityProductsBinding implements ViewBinding {
       id = R.id.cartGridView;
       GridView cartGridView = ViewBindings.findChildViewById(rootView, id);
       if (cartGridView == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextText2;
-      EditText editTextText2 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextText2 == null) {
         break missingId;
       }
 
@@ -120,13 +120,13 @@ public final class ActivityProductsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton9;
-      ImageButton imageButton9 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton9 == null) {
+      ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
         break missingId;
       }
-
-      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
@@ -134,8 +134,8 @@ public final class ActivityProductsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProductsBinding((ConstraintLayout) rootView, button2, cartGridView,
-          editTextText2, imageButton3, imageButton6, imageButton9, main, textView);
+      return new ActivityProductsBinding((ConstraintLayout) rootView, appLogo, button2,
+          cartGridView, imageButton3, imageButton6, main, searchView, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
