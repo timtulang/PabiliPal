@@ -20,6 +20,7 @@ public class ActivitySignUpUserBindingImpl extends ActivitySignUpUserBinding  {
         sViewsWithIds.put(R.id.signup_confirm, 4);
         sViewsWithIds.put(R.id.signup_button, 5);
         sViewsWithIds.put(R.id.loginRedirectText, 6);
+        sViewsWithIds.put(R.id.imageButton8, 7);
     }
     // views
     @NonNull
@@ -30,11 +31,12 @@ public class ActivitySignUpUserBindingImpl extends ActivitySignUpUserBinding  {
     // Inverse Binding Event Handlers
 
     public ActivitySignUpUserBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
     }
     private ActivitySignUpUserBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.TextView) bindings[1]
+            , (android.widget.ImageButton) bindings[7]
             , (android.widget.TextView) bindings[6]
             , (android.widget.Button) bindings[5]
             , (android.widget.EditText) bindings[4]

@@ -1,11 +1,13 @@
 package com.example.uibasics;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +22,10 @@ public class ProductCart extends AppCompatActivity {
     private InventoryRepository dbHelper;
     private ItemGridAdapter1 gridAdapter;
     private GridView gridView;
+    private SearchView searchView;
+    private List<CartItems> productList;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,9 +59,34 @@ public class ProductCart extends AppCompatActivity {
             }
         });
 
+        ImageButton backButton;
+        backButton = findViewById(R.id.imageButton6);
+        backButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(ProductCart.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         gridView = findViewById(R.id.cartGridView);
+        searchView = findViewById(R.id.searchView);
         loadProductsFromDatabase();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                filterProducts(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterProducts(newText);
+                return true;
+            }
+        });
     }
 
     @Override
@@ -69,5 +99,10 @@ public class ProductCart extends AppCompatActivity {
         List<CartItems> productList = dbHelper.getAllProducts();
         gridAdapter = new ItemGridAdapter1(this, productList);
         gridView.setAdapter(gridAdapter);
+    }
+
+    private void filterProducts(String query) {
+        List<CartItems> filteredList = dbHelper.searchProducts(query);
+        gridAdapter.updateProductList(filteredList);
     }
 }

@@ -2,7 +2,10 @@ package com.example.uibasics;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -22,6 +25,7 @@ public class Inventory extends AppCompatActivity {
     GridView gridView;
     ArrayList<InventoryItem> itemsRetrieved;
     ItemGridAdapter gridAdapter;
+    SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +39,35 @@ public class Inventory extends AppCompatActivity {
             return insets;
         });
 
+        ImageButton backButtonInventory;
+        backButtonInventory = findViewById(R.id.imageButton);
+        backButtonInventory.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Inventory.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         inventoryRepository = new InventoryRepository(Inventory.this);
         gridView = findViewById(R.id.availableItems);
-
+        searchView = findViewById(R.id.searchView);
 
         loadItems();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                filterItems(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterItems(newText);
+                return true;
+            }
+        });
 
         gridView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent;
@@ -93,5 +121,26 @@ public class Inventory extends AppCompatActivity {
         gridView.setAdapter(gridAdapter);
     }
 
+    private void filterItems(String query) {
+        List<InventoryItem> filteredItems = inventoryRepository.searchProductsInventory(query);
+        updateGridView(filteredItems);
+    }
+
+    private void updateGridView(List<InventoryItem> items) {
+        ArrayList<String> productName = new ArrayList<>();
+        ArrayList<Double> productPrice = new ArrayList<>();
+        ArrayList<Integer> quantity = new ArrayList<>();
+        List<byte[]> images = new ArrayList<>();
+
+        for (InventoryItem item : items) {
+            productName.add(item.getName());
+            productPrice.add(item.getPrice());
+            quantity.add(item.getStock());
+            images.add(item.getImage());
+        }
+
+        gridAdapter = new ItemGridAdapter(Inventory.this, productName, productPrice, quantity, images, true);
+        gridView.setAdapter(gridAdapter);
+    }
 
 }
