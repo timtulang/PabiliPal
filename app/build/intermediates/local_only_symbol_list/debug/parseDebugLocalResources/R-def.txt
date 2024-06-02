@@ -67,6 +67,7 @@ id MenuView
 id addButton
 id addImage
 id addStock
+id addtoCart
 id addtoInventory
 id appLogo
 id availableItems
@@ -75,7 +76,6 @@ id btn_confirm
 id button
 id button2
 id button3
-id button4
 id cardView
 id cartGridView
 id cartRecyclerView
@@ -136,6 +136,7 @@ id textView8
 id text_confirm_message
 id totalPriceSummary
 layout activity_add_item_inventory
+layout activity_add_item_to_cart
 layout activity_cart_summary
 layout activity_create_user
 layout activity_edit_item_inventory

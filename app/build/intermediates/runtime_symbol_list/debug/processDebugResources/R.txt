@@ -3202,6 +3202,7 @@ int id add 0x7f0a0047
 int id addButton 0x7f0a0048
 int id addImage 0x7f0a0049
 int id addStock 0x7f0a004a
+int id addtoCart 0x7f0a023b
 int id addtoInventory 0x7f0a004b
 int id alertTitle 0x7f0a004c
 int id aligned 0x7f0a004d
@@ -3237,7 +3238,6 @@ int id btn_confirm 0x7f0a006a
 int id button 0x7f0a006b
 int id button2 0x7f0a006c
 int id button3 0x7f0a006d
-int id button4 0x7f0a006e
 int id buttonPanel 0x7f0a006f
 int id cache_measures 0x7f0a0070
 int id callMeasure 0x7f0a0071
@@ -3812,6 +3812,7 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_add_item_inventory 0x7f0d001c
+int layout activity_add_item_to_cart 0x7f0d007b
 int layout activity_cart_summary 0x7f0d001d
 int layout activity_create_user 0x7f0d001e
 int layout activity_edit_item_inventory 0x7f0d001f

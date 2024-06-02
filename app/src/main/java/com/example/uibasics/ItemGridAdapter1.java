@@ -1,6 +1,7 @@
 package com.example.uibasics;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,7 +58,6 @@ public class ItemGridAdapter1 extends BaseAdapter {
         TextView productName = convertView.findViewById(R.id.productNameItems);
         TextView productPrice = convertView.findViewById(R.id.productPriceItems);
         TextView productQuantity = convertView.findViewById(R.id.productQuantityItems);
-        Button button4 = convertView.findViewById(R.id.button4);
 
         CartItems product = productList.get(position);
 
@@ -68,10 +68,6 @@ public class ItemGridAdapter1 extends BaseAdapter {
         productPrice.setText("₱" + product.getPrice());
         productQuantity.setText("Qty: " + product.getQuantity());
 
-        button4.setOnClickListener(v -> {
-            CartManager.getInstance(context).addToCart(product, 1);
-            Toast.makeText(context, product.getName() + " added to cart", Toast.LENGTH_SHORT).show();
-        });
 
         return convertView;
     }

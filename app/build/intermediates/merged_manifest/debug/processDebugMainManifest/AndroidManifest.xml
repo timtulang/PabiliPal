@@ -31,9 +31,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.LoginSystem" >
         <activity
-            android:name="com.example.uibasics.AddItemInventory"
+            android:name="com.example.uibasics.AddItemToCart"
             android:exported="false" />
-        <!-- LoginActivity as the launcher activity -->
+        <activity
+            android:name="com.example.uibasics.AddItemInventory"
+            android:exported="false" /> <!-- LoginActivity as the launcher activity -->
         <activity
             android:name="com.example.uibasics.LoginActivity"
             android:exported="true"

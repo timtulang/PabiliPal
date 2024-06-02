@@ -3203,6 +3203,7 @@ id add
 id addButton
 id addImage
 id addStock
+id addtoCart
 id addtoInventory
 id alertTitle
 id aligned
@@ -3238,7 +3239,6 @@ id btn_confirm
 id button
 id button2
 id button3
-id button4
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3813,6 +3813,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_item_inventory
+layout activity_add_item_to_cart
 layout activity_cart_summary
 layout activity_create_user
 layout activity_edit_item_inventory

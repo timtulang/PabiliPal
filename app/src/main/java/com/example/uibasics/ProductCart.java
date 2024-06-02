@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProductCart extends AppCompatActivity {
@@ -23,7 +25,7 @@ public class ProductCart extends AppCompatActivity {
     private ItemGridAdapter1 gridAdapter;
     private GridView gridView;
     private SearchView searchView;
-    private List<CartItems> productList;
+    private List<CartItems> productList = new ArrayList<>();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -71,6 +73,17 @@ public class ProductCart extends AppCompatActivity {
 
 
         gridView = findViewById(R.id.cartGridView);
+        productList = dbHelper.getAllProducts();
+
+        gridView.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent;
+            CartItems selectedItem = productList.get(position);
+            intent = new Intent(ProductCart.this, AddItemToCart.class);
+            Intent selectedItem1 = intent.putExtra("selectedItem", selectedItem);
+
+            intent.putExtra("selectedItem", selectedItem);
+            startActivity(intent);
+        });
         searchView = findViewById(R.id.searchView);
         loadProductsFromDatabase();
         searchView.setOnClickListener(new View.OnClickListener() {

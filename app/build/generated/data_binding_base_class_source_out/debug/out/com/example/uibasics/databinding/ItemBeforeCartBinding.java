@@ -4,7 +4,6 @@ package com.example.uibasics.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -23,9 +22,6 @@ public final class ItemBeforeCartBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button4;
-
-  @NonNull
   public final CardView cardView;
 
   @NonNull
@@ -40,12 +36,10 @@ public final class ItemBeforeCartBinding implements ViewBinding {
   @NonNull
   public final TextView productQuantityItems;
 
-  private ItemBeforeCartBinding(@NonNull ConstraintLayout rootView, @NonNull Button button4,
-      @NonNull CardView cardView, @NonNull ImageView productImage,
-      @NonNull TextView productNameItems, @NonNull TextView productPriceItems,
-      @NonNull TextView productQuantityItems) {
+  private ItemBeforeCartBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView,
+      @NonNull ImageView productImage, @NonNull TextView productNameItems,
+      @NonNull TextView productPriceItems, @NonNull TextView productQuantityItems) {
     this.rootView = rootView;
-    this.button4 = button4;
     this.cardView = cardView;
     this.productImage = productImage;
     this.productNameItems = productNameItems;
@@ -80,12 +74,6 @@ public final class ItemBeforeCartBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button4;
-      Button button4 = ViewBindings.findChildViewById(rootView, id);
-      if (button4 == null) {
-        break missingId;
-      }
-
       id = R.id.cardView;
       CardView cardView = ViewBindings.findChildViewById(rootView, id);
       if (cardView == null) {
@@ -116,7 +104,7 @@ public final class ItemBeforeCartBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemBeforeCartBinding((ConstraintLayout) rootView, button4, cardView, productImage,
+      return new ItemBeforeCartBinding((ConstraintLayout) rootView, cardView, productImage,
           productNameItems, productPriceItems, productQuantityItems);
     }
     String missingId = rootView.getResources().getResourceName(id);

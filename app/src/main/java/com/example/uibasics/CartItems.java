@@ -1,6 +1,8 @@
 package com.example.uibasics;
 
-public class CartItems{
+import java.io.Serializable;
+
+public class CartItems implements Serializable {
     private String name;
     private double price;
     private int quantity;

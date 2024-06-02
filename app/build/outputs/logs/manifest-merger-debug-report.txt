@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:2:1-65:12
 MERGED from [androidx.databinding:databinding-adapters:8.3.2] C:\Users\tulan\.gradle\caches\transforms-3\6347dac6cda922b53b0ba8e607315ca9\transformed\databinding-adapters-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.3.2] C:\Users\tulan\.gradle\caches\transforms-3\16dc8bd70ad37ea87736ae95517a27e2\transformed\databinding-runtime-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:viewbinding:8.3.2] C:\Users\tulan\.gradle\caches\transforms-3\a95d3f1e6d5d36bc96ca3bd372a8064a\transformed\viewbinding-8.3.2\AndroidManifest.xml:2:1-7:12
@@ -68,8 +68,8 @@ ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-60:19
-INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-60:19
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-63:19
+INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:9:5-63:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\tulan\.gradle\caches\transforms-3\8976ca320708bf67ad2dbae6aedcec40\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\tulan\.gradle\caches\transforms-3\8976ca320708bf67ad2dbae6aedcec40\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\tulan\.gradle\caches\transforms-3\a26c910d5f465f131fc34f042301a93a\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -99,93 +99,99 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\tu
 	android:roundIcon
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:15:9-51
 	tools:targetApi
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:17:9-29
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:13:9-40
 	android:allowBackup
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:18:9-49
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:17:9-49
 	android:dataExtractionRules
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:11:9-65
-activity#com.example.uibasics.AddItemInventory
+activity#com.example.uibasics.AddItemToCart
 ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:20:13-42
+activity#com.example.uibasics.AddItemInventory
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:23:13-45
 activity#com.example.uibasics.LoginActivity
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:23:9-32:20
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:25:9-34:20
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:25:13-36
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:27:13-36
 	android:theme
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:26:13-53
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:28:13-53
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:24:13-42
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:26:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:32:27-74
 activity#com.example.uibasics.SignUpActivityAdmin
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:33:9-35:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:34:13-48
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:36:13-48
 activity#com.example.uibasics.MainActivity
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:36:9-38:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:38:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:37:13-41
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:39:13-41
 activity#com.example.uibasics.ProductCart
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:39:9-41:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:40:13-40
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:42:13-40
 activity#com.example.uibasics.Inventory
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:42:9-44:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:43:13-38
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:45:13-38
 activity#com.example.uibasics.EditItemInventory
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:45:9-47:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:46:13-46
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:48:13-46
 activity#com.example.uibasics.SignUpActivityUser
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:48:9-50:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:50:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:49:13-47
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:51:13-47
 activity#com.example.uibasics.CartSummary
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:51:9-53:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:53:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:52:13-40
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:54:13-40
 activity#com.example.uibasics.ShoppingCart
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:54:9-56:40
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:55:13-41
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:57:13-41
 meta-data#preloaded_fonts
-ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:57:9-59:57
+ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:60:9-62:57
 	android:resource
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:59:13-54
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:62:13-54
 	android:name
-		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:58:13-43
+		ADDED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml:61:13-43
 uses-sdk
 INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\AndroidManifest.xml
