@@ -1,6 +1,7 @@
 package com.example.uibasics;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
     private TextView totalPriceTextView;
     private Context context;
 
+    private ImageHelper imageHelper = new ImageHelper();
+
     public CartAdapter(Context context, List<CartItems> cartItems, TextView totalPriceTextView) {
         this.context = context;
         this.cartItems = cartItems;
@@ -36,10 +39,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         CartItems product = cartItems.get(position);
+        Bitmap imageBitmap = imageHelper.byteArrayToBitmap(product.getImagePath());
         holder.nameTextView.setText(product.getName());
         holder.priceTextView.setText("₱" + product.getTotalPrice());
         holder.quantityEditText.setText(String.valueOf(product.getQuantity()));
-        holder.imageView.setImageResource(R.drawable.noimg);
+        holder.imageView.setImageBitmap(imageBitmap);
 
 
         holder.increaseButton.setOnClickListener(v -> {

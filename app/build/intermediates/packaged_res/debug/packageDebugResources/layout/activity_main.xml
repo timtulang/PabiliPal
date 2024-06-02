@@ -27,7 +27,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+        app:srcCompat="@drawable/ppallogo" />
 
     <TextView
         android:id="@+id/screenTitle"

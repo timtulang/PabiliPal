@@ -3,6 +3,8 @@ package com.example.uibasics;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.provider.MediaStore;
 import android.net.Uri;
 import java.io.ByteArrayOutputStream;
@@ -38,6 +40,10 @@ public class ImageHelper {
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         return stream.toByteArray();
     }
+    public Bitmap byteArrayToBitmap(byte[] byteArray) {
+        return BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+    }
+
 
     public byte[] inputStreamToByteArray(InputStream inputStream) throws IOException {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -47,5 +53,16 @@ public class ImageHelper {
             outputStream.write(buffer, 0, length);
         }
         return outputStream.toByteArray();
+    }
+
+    public Bitmap resizeBitmap(Bitmap originalBitmap, int maxWidth, int maxHeight) {
+        int width = originalBitmap.getWidth();
+        int height = originalBitmap.getHeight();
+        float scaleRatio = Math.min((float) maxWidth / width, (float) maxHeight / height);
+
+        Matrix matrix = new Matrix();
+        matrix.postScale(scaleRatio, scaleRatio);
+
+        return Bitmap.createBitmap(originalBitmap, 0, 0, width, height, matrix, true);
     }
 }

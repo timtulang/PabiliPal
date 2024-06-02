@@ -10,6 +10,8 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -24,9 +26,8 @@ public class AddItemInventory extends AppCompatActivity {
     int stock = 0;
     InventoryRepository inventory = new InventoryRepository(AddItemInventory.this);
     ImageHelper imageHelper = new ImageHelper();
-    ConvertPNGtoByteArray imgPlaceholder = new ConvertPNGtoByteArray();
-    private static final int REQUEST_IMAGE_CAPTURE = 101;
-    private static final int REQUEST_IMAGE_PICK = 102;
+    private static final int REQUEST_IMAGE_CAPTURE = ImageHelper.REQUEST_IMAGE_CAPTURE;
+    private static final int REQUEST_IMAGE_PICK = ImageHelper.REQUEST_IMAGE_PICK;
     byte[] itemImage;
     ImageButton addImage;
 
@@ -40,7 +41,8 @@ public class AddItemInventory extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ImageButton addImage = findViewById(R.id.addImage);
+
+        addImage = findViewById(R.id.addImage);
         EditText productName = findViewById(R.id.productName);
         EditText productPrice = findViewById(R.id.productPrice);
         EditText addStock = findViewById(R.id.addStock);
@@ -48,63 +50,68 @@ public class AddItemInventory extends AppCompatActivity {
         ImageButton incrementStock = findViewById(R.id.incrementStock);
         Button addItem = findViewById(R.id.addtoInventory);
 
-
         decrementStock.setOnClickListener(v -> decreaseStock(addStock));
         incrementStock.setOnClickListener(v -> increaseStock(addStock));
-
-
 
         addItem.setOnClickListener(v -> {
             String prodName = productName.getText().toString();
             String prodPriceString = productPrice.getText().toString();
             String prodStockString = addStock.getText().toString();
 
-
-
             if (validateInputs(prodName, prodPriceString, prodStockString)) {
                 double prodPrice = Double.parseDouble(prodPriceString);
                 int prodStock = Integer.parseInt(prodStockString);
-                inventory.addItem(prodName, prodPrice, prodStock, generatePlaceholderByteArray());
+                inventory.addItem(prodName, prodPrice, prodStock, itemImage != null ? itemImage : generatePlaceholderByteArray());
 
                 setResult(RESULT_OK);
                 finish();
             }
         });
-        addImage.setOnClickListener(v -> {
-            ImageHelper.openImageChooser(AddItemInventory.this);
-            if (itemImage != null){
-                Bitmap bitmap = BitmapFactory.decodeByteArray(itemImage, 0 , itemImage.length);
-            }
-        });
+
+        addImage.setOnClickListener(v -> ImageHelper.openImageChooser(AddItemInventory.this));
     }
 
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (resultCode == Activity.RESULT_OK) {
+        if (resultCode == Activity.RESULT_OK && data != null) {
             if (requestCode == REQUEST_IMAGE_CAPTURE) {
-                Bitmap imageBitmap = (Bitmap) data.getExtras().get("data");
-
-                itemImage = imageHelper.bitmapToByteArray(imageBitmap);
-
-                Log.d("ImageDimensions", "Width: " + imageBitmap.getWidth() + ", Height: " + imageBitmap.getHeight());
-
-                addImage.setImageBitmap(imageBitmap);
+                Bundle extras = data.getExtras();
+                if (extras != null) {
+                    Bitmap imageBitmap = (Bitmap) extras.get("data");
+                    if (imageBitmap != null) {
+                        Bitmap resizedBitmap = imageHelper.resizeBitmap(imageBitmap, addImage.getWidth(), addImage.getHeight());
+                        addImage.setImageBitmap(resizedBitmap);
+                        itemImage = imageHelper.bitmapToByteArray(resizedBitmap);
+                    } else {
+                        Log.e("AddItemInventory", "Image Bitmap is null");
+                    }
+                } else {
+                    Log.e("AddItemInventory", "Extras are null");
+                }
             } else if (requestCode == REQUEST_IMAGE_PICK) {
                 Uri imageUri = data.getData();
-                try {
-                    InputStream inputStream = getContentResolver().openInputStream(imageUri);
-                    itemImage = imageHelper.inputStreamToByteArray(inputStream);
-
-                    Bitmap imageBitmap = BitmapFactory.decodeStream(inputStream);
-
-                    Log.d("ImageDimensions", "Width: " + imageBitmap.getWidth() + ", Height: " + imageBitmap.getHeight());
-                    addImage.setImageBitmap(imageBitmap);
-                } catch (IOException e) {
-                    e.printStackTrace();
+                if (imageUri != null) {
+                    try (InputStream inputStream = getContentResolver().openInputStream(imageUri)) {
+                        Bitmap imageBitmap = BitmapFactory.decodeStream(inputStream);
+                        if (imageBitmap != null) {
+                            Bitmap resizedBitmap = imageHelper.resizeBitmap(imageBitmap, addImage.getWidth(), addImage.getHeight());
+                            addImage.setImageBitmap(resizedBitmap);
+                            itemImage = imageHelper.bitmapToByteArray(resizedBitmap);
+                        } else {
+                            Log.e("AddItemInventory", "Image Bitmap is null");
+                        }
+                    } catch (IOException e) {
+                        Log.e("AddItemInventory", "Error opening InputStream: " + e.getMessage());
+                        e.printStackTrace();
+                    }
+                } else {
+                    Log.e("AddItemInventory", "Image URI is null");
                 }
             }
-
+        } else {
+            Log.e("AddItemInventory", "Intent data is null or result is not OK");
         }
     }
 
@@ -115,8 +122,6 @@ public class AddItemInventory extends AppCompatActivity {
         placeholderBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         return stream.toByteArray();
     }
-
-
 
     private void decreaseStock(EditText addStock) {
         stock -= 1;
@@ -130,18 +135,16 @@ public class AddItemInventory extends AppCompatActivity {
 
     private boolean validateInputs(String name, String price, String stock) {
         if (name.isEmpty() || price.isEmpty() || stock.isEmpty()) {
-            // Handle the error, e.g., show a Toast message
+            Toast.makeText(AddItemInventory.this, "Please fill out the fields", Toast.LENGTH_SHORT).show();
             return false;
         }
         try {
             Double.parseDouble(price);
             Integer.parseInt(stock);
         } catch (NumberFormatException e) {
-
+            Toast.makeText(AddItemInventory.this, "Invalid input format", Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
     }
-
-
 }

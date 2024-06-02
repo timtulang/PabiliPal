@@ -1358,6 +1358,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color app_icon_background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -2982,6 +2983,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable admincreate
+drawable app_icon_foreground
 drawable avd_hide_password
 drawable avd_show_password
 drawable bag_shopping_solid_1
@@ -3105,6 +3107,7 @@ drawable placeholder
 drawable placeholder_square
 drawable plus_solid
 drawable pluswhite
+drawable ppallogo
 drawable round_button
 drawable rounded_button
 drawable roundedcorners
@@ -3640,7 +3643,6 @@ id textView4
 id textView6
 id textView7
 id textView8
-id textViewDashboard
 id textWatcher
 id text_confirm_message
 id text_input_end_icon
@@ -3813,7 +3815,6 @@ layout activity_edit_item_inventory
 layout activity_inventory
 layout activity_login
 layout activity_main
-layout activity_mainlogin
 layout activity_products
 layout activity_shopping_cart
 layout activity_sign_up
@@ -3902,6 +3903,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+mipmap app_icon
+mipmap app_icon_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

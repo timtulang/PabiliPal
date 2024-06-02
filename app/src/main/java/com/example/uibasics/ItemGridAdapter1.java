@@ -1,6 +1,7 @@
 package com.example.uibasics;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ public class ItemGridAdapter1 extends BaseAdapter {
     private Context context;
     private List<CartItems> productList;
     private LayoutInflater inflater;
+    private ImageHelper imageHelper = new ImageHelper();
 
 
     public ItemGridAdapter1(Context context, List<CartItems> productList) {
@@ -59,7 +61,9 @@ public class ItemGridAdapter1 extends BaseAdapter {
 
         CartItems product = productList.get(position);
 
-        imageView.setImageResource(R.drawable.noimg);
+        Bitmap imageBitmap = imageHelper.byteArrayToBitmap(product.getImagePath());
+
+        imageView.setImageBitmap(imageBitmap);
         productName.setText(product.getName());
         productPrice.setText("₱" + product.getPrice());
         productQuantity.setText("Qty: " + product.getQuantity());

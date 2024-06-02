@@ -4,7 +4,7 @@
             "outputFile": "com.example.uibasics.test.app-mergeDebugAndroidTestResources-3:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tulan\\.gradle\\caches\\transforms-3\\8cb97d565e9897fc7b44774ccd5161d4\\transformed\\core-1.5.0\\res\\values-v21\\values.xml",
+                    "source": "C:\\Users\\tulan\\.gradle\\caches\\transforms-3\\710ff0ebff6057bb0416c3eca48bb01d\\transformed\\core-1.5.0\\res\\values-v21\\values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",

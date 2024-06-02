@@ -25,20 +25,6 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\tulan\AppData\Local\Temp\ic_android_black_24dp.xml" />
-                                                <entry key="opacityPercent" value="80" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                      <entry key="image">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\tulan\Downloads\noimage.png" />
-                                                <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -68,15 +54,6 @@
                                       </entry>
                                     </map>
                                   </option>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\tulan\Downloads\noimage.png" />
-                                      <entry key="outputName" value="noimage" />
-                                      <entry key="theme" value="HOLO_DARK" />
-                                      <entry key="themeColor" value="545454" />
-                                    </map>
-                                  </option>
                                 </PersistentState>
                               </value>
                             </entry>
@@ -102,6 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\tulan\AndroidStudioProjects\PabiliPal\app\src\main\res\drawable\ppallogo.xml" />
+                                                <entry key="scalingPercent" value="61" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -129,6 +108,14 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="outputName" value="app_icon" />
+                                      <entry key="showSafeZone" value="false" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -294,14 +281,14 @@
                                       </entry>
                                     </map>
                                   </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="showSafeZone" value="false" />
+                                    </map>
+                                  </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
@@ -320,38 +307,11 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
-                        <option name="children">
-                          <map>
-                            <entry key="clipartAsset">
-                              <value>
-                                <PersistentState>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/admin_panel_settings/baseline_admin_panel_settings_24.xml" />
-                                    </map>
-                                  </option>
-                                </PersistentState>
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
                         <option name="values">
                           <map>
-<<<<<<< HEAD
                             <entry key="assetSourceType" value="FILE" />
-<<<<<<< HEAD
-                            <entry key="color" value="83b0e1" />
-                            <entry key="outputName" value="admincreate" />
-                            <entry key="sourceFile" value="C:\Users\Hardy\Downloads\user-shield-solid.svg" />
-=======
-                            <entry key="outputName" value="noimage" />
-                            <entry key="sourceFile" value="C:\Users\tulan\Downloads\Group 4943.svg" />
->>>>>>> PRODUCTS
-=======
-                            <entry key="color" value="83b0e1" />
-                            <entry key="outputName" value="admincreate" />
-                            <entry key="sourceFile" value="C:\Users\Hardy\Downloads\User.svg" />
->>>>>>> parent of 91473e0 (Login System V2.1)
+                            <entry key="outputName" value="ppallogo" />
+                            <entry key="sourceFile" value="C:\Users\tulan\Downloads\SVG\pPalLogo.svg" />
                           </map>
                         </option>
                       </PersistentState>

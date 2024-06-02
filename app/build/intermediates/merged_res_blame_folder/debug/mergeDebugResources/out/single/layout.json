@@ -70,9 +70,5 @@
     {
         "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_login.xml",
         "source": "com.example.uibasics.app-main-35:/layout/activity_login.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_mainlogin.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_mainlogin.xml"
     }
 ]
