@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -40,6 +41,17 @@ public class AddItemInventory extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageButton backButtonAddItem;
+        backButtonAddItem = findViewById(R.id.imageButton7);
+        backButtonAddItem.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(AddItemInventory.this, Inventory.class);
+                startActivity(intent);
+            }
+        });
+
         ImageButton addImage = findViewById(R.id.addImage);
         EditText productName = findViewById(R.id.productName);
         EditText productPrice = findViewById(R.id.productPrice);

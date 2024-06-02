@@ -36,6 +36,17 @@ public class EditItemInventory extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageButton backButtonEditItem;
+        backButtonEditItem = findViewById(R.id.imageButton5);
+        backButtonEditItem.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(EditItemInventory.this, Inventory.class);
+                startActivity(intent);
+            }
+        });
+
         InventoryRepository inventory = new InventoryRepository(EditItemInventory.this);
 
         Intent intent = getIntent();

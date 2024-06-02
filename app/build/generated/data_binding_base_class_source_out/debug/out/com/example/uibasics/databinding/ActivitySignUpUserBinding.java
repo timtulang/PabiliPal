@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +19,9 @@ import java.lang.Object;
 public abstract class ActivitySignUpUserBinding extends ViewDataBinding {
   @NonNull
   public final TextView createUserLabel;
+
+  @NonNull
+  public final ImageButton imageButton8;
 
   @NonNull
   public final TextView loginRedirectText;
@@ -35,10 +39,11 @@ public abstract class ActivitySignUpUserBinding extends ViewDataBinding {
   public final EditText signupUser;
 
   protected ActivitySignUpUserBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView createUserLabel, TextView loginRedirectText, Button signupButton,
-      EditText signupConfirm, EditText signupPassword, EditText signupUser) {
+      TextView createUserLabel, ImageButton imageButton8, TextView loginRedirectText,
+      Button signupButton, EditText signupConfirm, EditText signupPassword, EditText signupUser) {
     super(_bindingComponent, _root, _localFieldCount);
     this.createUserLabel = createUserLabel;
+    this.imageButton8 = imageButton8;
     this.loginRedirectText = loginRedirectText;
     this.signupButton = signupButton;
     this.signupConfirm = signupConfirm;

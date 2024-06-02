@@ -3,6 +3,7 @@ package com.example.uibasics;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +37,16 @@ public class SignUpActivityUser extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 navigateToLogin();
+            }
+        });
+
+        ImageButton backButtonSignUpUser;
+        backButtonSignUpUser = findViewById(R.id.imageButton8);
+        backButtonSignUpUser.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(SignUpActivityUser.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

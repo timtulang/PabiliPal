@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".products">
 
     <TextView
@@ -31,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.055"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/arrow_left_solid" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -46,37 +47,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.055"
         app:srcCompat="@drawable/cart" />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="70dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#83b1e0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238"
-        app:srcCompat="@drawable/slider" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="660dp"
-        android:layout_height="67dp"
-        android:background="@drawable/et_bgstyle"
-        android:elevation="10dp"
-        android:hint="Search"
-        android:inputType="text"
-        android:padding="20dp"
-        android:singleLine="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
 
     <Button
         android:id="@+id/button2"
@@ -109,5 +79,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.673" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="660dp"
+        android:layout_height="67dp"
+        android:background="@drawable/et_bgstyle"
+        android:elevation="10dp"
+        android:queryHint="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

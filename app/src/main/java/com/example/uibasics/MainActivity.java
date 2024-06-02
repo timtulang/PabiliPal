@@ -1,7 +1,10 @@
 package com.example.uibasics;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -17,7 +20,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements MenuRecyclerInterface{
     ArrayList <MenuItemModel> menuItemModels = new ArrayList<>();
     int[] menuItemImages = {R.drawable.bag_shopping_solid_1, R.drawable.truck_moving_solid_1, R.drawable.usercreate, R.drawable.admincreate};
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements MenuRecyclerInter
         changeActivity(position);
     }
 
+    @SuppressLint("WrongViewCast")
     private void changeActivity(int position){
         Intent intent;
         switch (position){

@@ -130,4 +130,42 @@ public class InventoryRepository {
     public void shutDown() {
         executorService.shutdown();
     }
+
+    public List<CartItems> searchProducts(String query) {
+        List<CartItems> products = new ArrayList<>();
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM Inventory WHERE name LIKE ?", new String[]{"%" + query + "%"});
+
+        if (cursor.moveToFirst()) {
+            do {
+                String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+                double price = cursor.getDouble(cursor.getColumnIndexOrThrow("price"));
+                int quantity = cursor.getInt(cursor.getColumnIndexOrThrow("stock"));
+                byte[] image = cursor.getBlob(cursor.getColumnIndexOrThrow("image"));
+                products.add(new CartItems(name, price, quantity, image));
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return products;
+    }
+
+    public List<InventoryItem> searchProductsInventory(String query) {
+        List<InventoryItem> products = new ArrayList<>();
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM Inventory WHERE name LIKE ?", new String[]{"%" + query + "%"});
+
+        if (cursor.moveToFirst()) {
+            do {
+                int id = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
+                String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+                double price = cursor.getDouble(cursor.getColumnIndexOrThrow("price"));
+                int stock = cursor.getInt(cursor.getColumnIndexOrThrow("stock"));
+                byte[] image = cursor.getBlob(cursor.getColumnIndexOrThrow("image"));
+                products.add(new InventoryItem(id, name, price, stock, image));
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return products;
+    }
+
 }

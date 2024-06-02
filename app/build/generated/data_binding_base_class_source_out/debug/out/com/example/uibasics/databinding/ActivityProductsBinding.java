@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,36 +30,31 @@ public final class ActivityProductsBinding implements ViewBinding {
   public final GridView cartGridView;
 
   @NonNull
-  public final EditText editTextText2;
-
-  @NonNull
   public final ImageButton imageButton3;
 
   @NonNull
   public final ImageButton imageButton6;
 
   @NonNull
-  public final ImageButton imageButton9;
+  public final ConstraintLayout main;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final SearchView searchView;
 
   @NonNull
   public final TextView textView;
 
   private ActivityProductsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull GridView cartGridView, @NonNull EditText editTextText2,
-      @NonNull ImageButton imageButton3, @NonNull ImageButton imageButton6,
-      @NonNull ImageButton imageButton9, @NonNull ConstraintLayout main,
-      @NonNull TextView textView) {
+      @NonNull GridView cartGridView, @NonNull ImageButton imageButton3,
+      @NonNull ImageButton imageButton6, @NonNull ConstraintLayout main,
+      @NonNull SearchView searchView, @NonNull TextView textView) {
     this.rootView = rootView;
     this.button2 = button2;
     this.cartGridView = cartGridView;
-    this.editTextText2 = editTextText2;
     this.imageButton3 = imageButton3;
     this.imageButton6 = imageButton6;
-    this.imageButton9 = imageButton9;
     this.main = main;
+    this.searchView = searchView;
     this.textView = textView;
   }
 
@@ -102,12 +97,6 @@ public final class ActivityProductsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.editTextText2;
-      EditText editTextText2 = ViewBindings.findChildViewById(rootView, id);
-      if (editTextText2 == null) {
-        break missingId;
-      }
-
       id = R.id.imageButton3;
       ImageButton imageButton3 = ViewBindings.findChildViewById(rootView, id);
       if (imageButton3 == null) {
@@ -120,13 +109,13 @@ public final class ActivityProductsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton9;
-      ImageButton imageButton9 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton9 == null) {
+      ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
         break missingId;
       }
-
-      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
@@ -135,7 +124,7 @@ public final class ActivityProductsBinding implements ViewBinding {
       }
 
       return new ActivityProductsBinding((ConstraintLayout) rootView, button2, cartGridView,
-          editTextText2, imageButton3, imageButton6, imageButton9, main, textView);
+          imageButton3, imageButton6, main, searchView, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

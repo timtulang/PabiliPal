@@ -39,6 +39,9 @@ public final class ActivityEditItemInventoryBinding implements ViewBinding {
   public final Button deleteItem;
 
   @NonNull
+  public final ImageButton imageButton5;
+
+  @NonNull
   public final ImageButton incrementStock;
 
   @NonNull
@@ -62,15 +65,17 @@ public final class ActivityEditItemInventoryBinding implements ViewBinding {
   private ActivityEditItemInventoryBinding(@NonNull RelativeLayout rootView,
       @NonNull ImageView addImage, @NonNull EditText addStock, @NonNull Button addtoInventory,
       @NonNull ImageButton decrementStock, @NonNull Button deleteItem,
-      @NonNull ImageButton incrementStock, @NonNull TextView labelProdName,
-      @NonNull TextView labelProdPrice, @NonNull TextView labelProdStock,
-      @NonNull RelativeLayout main, @NonNull EditText productName, @NonNull EditText productPrice) {
+      @NonNull ImageButton imageButton5, @NonNull ImageButton incrementStock,
+      @NonNull TextView labelProdName, @NonNull TextView labelProdPrice,
+      @NonNull TextView labelProdStock, @NonNull RelativeLayout main, @NonNull EditText productName,
+      @NonNull EditText productPrice) {
     this.rootView = rootView;
     this.addImage = addImage;
     this.addStock = addStock;
     this.addtoInventory = addtoInventory;
     this.decrementStock = decrementStock;
     this.deleteItem = deleteItem;
+    this.imageButton5 = imageButton5;
     this.incrementStock = incrementStock;
     this.labelProdName = labelProdName;
     this.labelProdPrice = labelProdPrice;
@@ -137,6 +142,12 @@ public final class ActivityEditItemInventoryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageButton5;
+      ImageButton imageButton5 = ViewBindings.findChildViewById(rootView, id);
+      if (imageButton5 == null) {
+        break missingId;
+      }
+
       id = R.id.incrementStock;
       ImageButton incrementStock = ViewBindings.findChildViewById(rootView, id);
       if (incrementStock == null) {
@@ -176,8 +187,8 @@ public final class ActivityEditItemInventoryBinding implements ViewBinding {
       }
 
       return new ActivityEditItemInventoryBinding((RelativeLayout) rootView, addImage, addStock,
-          addtoInventory, decrementStock, deleteItem, incrementStock, labelProdName, labelProdPrice,
-          labelProdStock, main, productName, productPrice);
+          addtoInventory, decrementStock, deleteItem, imageButton5, incrementStock, labelProdName,
+          labelProdPrice, labelProdStock, main, productName, productPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
