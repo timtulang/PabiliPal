@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemInventory">
+
+    <ImageButton
+        android:id="@+id/addImage"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/placeholder_square"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:background="@drawable/et_bgstyle2"
+        android:padding="15dp"
+        android:layout_below="@+id/labelProdName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/labelProdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="20sp"
+        android:textColor="#999999"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/addImage"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="0.00"
+        android:background="@drawable/et_bgstyle2"
+        android:padding="15dp"
+        android:layout_below="@+id/labelProdPrice"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/labelProdPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        android:textSize="20sp"
+        android:textColor="#999999"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/productName"
+        android:fontFamily="@font/poppins"
+        />
+
+    <TextView
+        android:id="@+id/labelProdStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock"
+        android:textSize="20sp"
+        android:textColor="#999999"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/productName"
+        android:fontFamily="@font/poppins"
+        android:layout_toRightOf="@id/labelProdPrice"
+        />
+
+    <EditText
+        android:id="@+id/addStock"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="0"
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/decrementStock"
+        android:layout_below="@+id/labelProdPrice"/>
+
+    <ImageButton
+        android:id="@+id/decrementStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlebuttonbg"
+        app:srcCompat="@drawable/minus"
+        android:layout_toRightOf="@id/productPrice"
+        android:layout_below="@+id/labelProdPrice"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/incrementStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlebuttonbg"
+        app:srcCompat="@drawable/pluswhite"
+        android:layout_toRightOf="@id/addStock"
+        android:layout_below="@+id/labelProdPrice"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="40dp"
+        android:layout_weight="1"
+        android:backgroundTint="#fff4fc"
+        app:srcCompat="@drawable/arrow_left_solid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/addtoInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Add item to inventory" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -23,6 +23,7 @@ drawable app_icon_foreground
 drawable arrow_left_solid
 drawable bag_shopping_solid_1
 drawable baseline_arrow_drop_down_circle_24
+drawable baseline_exit_to_app_24
 drawable baseline_lock_24
 drawable baseline_password_24
 drawable baseline_person_24
@@ -97,6 +98,7 @@ id imageButton8
 id imageButton9
 id imageView
 id imageView2
+id imageView3
 id imageView4
 id imageView5
 id incrementStock
@@ -116,8 +118,8 @@ id productNameItems
 id productPrice
 id productPriceItems
 id productQuantityItems
-id role_spinner
 id screenTitle
+id screenTitle2
 id searchView
 id signupRedirectText
 id signup_button

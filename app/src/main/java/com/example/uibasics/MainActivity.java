@@ -19,11 +19,11 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements MenuRecyclerInterface{
     ArrayList <MenuItemModel> menuItemModels = new ArrayList<>();
-    int[] menuItemImages = {R.drawable.bag_shopping_solid_1, R.drawable.truck_moving_solid_1, R.drawable.usercreate, R.drawable.admincreate};
+    int[] menuItemImages = {R.drawable.bag_shopping_solid_1, R.drawable.truck_moving_solid_1, R.drawable.usercreate, R.drawable.baseline_exit_to_app_24};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Toast.makeText(this, "MainActivity Launched", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Loading...", Toast.LENGTH_SHORT).show();
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements MenuRecyclerInter
                 startActivity(intent);
                 break;
             case 3:
-                intent = new Intent(this, SignUpActivityAdmin.class);
+                intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 break;
             default:

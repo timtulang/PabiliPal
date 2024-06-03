@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +23,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView imageView3;
+
+  @NonNull
   public final Button loginButton;
 
   @NonNull
@@ -35,20 +38,26 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final Spinner roleSpinner;
+  public final TextView screenTitle;
+
+  @NonNull
+  public final TextView screenTitle2;
 
   @NonNull
   public final TextView signupRedirectText;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button loginButton,
-      @NonNull EditText loginPassword, @NonNull EditText loginUser, @NonNull ConstraintLayout main,
-      @NonNull Spinner roleSpinner, @NonNull TextView signupRedirectText) {
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView3,
+      @NonNull Button loginButton, @NonNull EditText loginPassword, @NonNull EditText loginUser,
+      @NonNull ConstraintLayout main, @NonNull TextView screenTitle, @NonNull TextView screenTitle2,
+      @NonNull TextView signupRedirectText) {
     this.rootView = rootView;
+    this.imageView3 = imageView3;
     this.loginButton = loginButton;
     this.loginPassword = loginPassword;
     this.loginUser = loginUser;
     this.main = main;
-    this.roleSpinner = roleSpinner;
+    this.screenTitle = screenTitle;
+    this.screenTitle2 = screenTitle2;
     this.signupRedirectText = signupRedirectText;
   }
 
@@ -79,6 +88,12 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
+        break missingId;
+      }
+
       id = R.id.login_button;
       Button loginButton = ViewBindings.findChildViewById(rootView, id);
       if (loginButton == null) {
@@ -99,9 +114,15 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.role_spinner;
-      Spinner roleSpinner = ViewBindings.findChildViewById(rootView, id);
-      if (roleSpinner == null) {
+      id = R.id.screenTitle;
+      TextView screenTitle = ViewBindings.findChildViewById(rootView, id);
+      if (screenTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.screenTitle2;
+      TextView screenTitle2 = ViewBindings.findChildViewById(rootView, id);
+      if (screenTitle2 == null) {
         break missingId;
       }
 
@@ -111,8 +132,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, loginButton, loginPassword,
-          loginUser, main, roleSpinner, signupRedirectText);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, imageView3, loginButton,
+          loginPassword, loginUser, main, screenTitle, screenTitle2, signupRedirectText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

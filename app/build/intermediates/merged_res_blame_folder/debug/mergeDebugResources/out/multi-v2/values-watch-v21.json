@@ -4,7 +4,7 @@
             "outputFile": "com.example.uibasics.app-mergeDebugResources-31:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tulan\\.gradle\\caches\\transforms-3\\59fd4a344ace67f5c209394de1e2b72e\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Hardy\\.gradle\\caches\\transforms-3\\59fd4a344ace67f5c209394de1e2b72e\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

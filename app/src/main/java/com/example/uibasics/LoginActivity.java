@@ -19,18 +19,13 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Toast.makeText(this, "LoginActivity Launched", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Loading...", Toast.LENGTH_SHORT).show();
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         databaseHelperLogin = new DatabaseHelperLogin(this);
 
-        // Setting up the Spinner
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.roles_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        binding.roleSpinner.setAdapter(adapter);
 
         binding.loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,9 +52,9 @@ public class LoginActivity extends AppCompatActivity {
     private void login() {
         String user = binding.loginUser.getText().toString().trim();
         String password = binding.loginPassword.getText().toString().trim();
-        String selectedRole = binding.roleSpinner.getSelectedItem().toString().trim();
 
-        Log.d(TAG, "User: " + user + ", Password: " + password + ", Selected Role: " + selectedRole);
+
+
 
         if (user.isEmpty() || password.isEmpty()) {
             Toast.makeText(LoginActivity.this, "Please fill out all input fields", Toast.LENGTH_SHORT).show();
@@ -68,13 +63,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (databaseHelperLogin.checkUser(user)) {
             if (databaseHelperLogin.checkUserPassword(user, password)) {
-                if (selectedRole.equals("Admin") && databaseHelperLogin.isAdmin(user)) {
-                    navigateToAdminActivity();
-                } else if (selectedRole.equals("User") && !databaseHelperLogin.isAdmin(user)) {
-                    navigateToMainActivity();
-                } else {
-                    Toast.makeText(LoginActivity.this, "Invalid role selection", Toast.LENGTH_SHORT).show();
-                }
+                navigateToAdminActivity();
             } else {
                 Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
             }
