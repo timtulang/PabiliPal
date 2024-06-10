@@ -14,9 +14,13 @@ color black
 color blue
 color darkblue
 color darkestblue
+color gray
+color green
 color lightblue
 color lightestblue
+color orange
 color primary
+color red
 color white
 drawable admincreate
 drawable app_icon_foreground
@@ -112,6 +116,7 @@ id login_user
 id main
 id menuItemTitle
 id menuviewrow
+id outOfStockGridView
 id productImage
 id productName
 id productNameItems

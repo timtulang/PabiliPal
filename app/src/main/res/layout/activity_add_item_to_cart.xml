@@ -15,75 +15,71 @@
         android:layout_centerHorizontal="true"/>
 
 
-
     <TextView
         android:id="@+id/productName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Product Name"
-        android:textSize="20sp"
-        android:textColor="#494949"
-        android:textStyle="italic"
         android:layout_below="@+id/labelProdName"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:fontFamily="@font/poppins"/>
+        android:fontFamily="@font/poppins"
+        android:text="Product Name"
+        android:textColor="#737373"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/labelProdName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Name"
-        android:textSize="20sp"
-        android:textColor="#999999"
+        android:layout_below="@+id/addImage"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
-        android:layout_below="@+id/addImage"
-        android:fontFamily="@font/poppins"/>
+        android:fontFamily="@font/poppins"
+        android:text="Product Name"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/productPrice"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:text="Product Price"
-        android:textSize="20sp"
-        android:textColor="#494949"
-        android:textStyle="italic"
         android:layout_below="@+id/labelProdPrice"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="20dp"
         android:fontFamily="@font/poppins"
-        />
+        android:text="Product Price"
+        android:textColor="#737373"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/labelProdPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Price"
-        android:textSize="20sp"
-        android:textColor="#999999"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="10dp"
         android:layout_below="@+id/productName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/poppins"
-        />
+        android:text="Product Price"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/labelProdStock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quantity"
-        android:textSize="20sp"
-        android:textColor="#999999"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="290dp"
-        android:layout_marginBottom="10dp"
         android:layout_below="@+id/productName"
-        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@id/labelProdPrice"
-        />
+        android:fontFamily="@font/poppins"
+        android:text="Quantity"
+        android:textColor="#000000"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/addStock"
@@ -144,7 +140,8 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/buttonshape"
             android:fontFamily="@font/poppins_bold"
-            android:text="Add item to Cart" />
+            android:text="Add item to Cart"
+            android:textColor="#000000" />
 
 
     </LinearLayout>

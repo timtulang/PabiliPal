@@ -23,9 +23,12 @@ public class ProductCart extends AppCompatActivity {
 
     private InventoryRepository dbHelper;
     private ItemGridAdapter1 gridAdapter;
+    private ItemGridAdapter1 outOfStockAdapter;
     private GridView gridView;
+    private GridView outOfStockGridView;
     private SearchView searchView;
     private List<CartItems> productList = new ArrayList<>();
+    private List<CartItems> outOfStockList = new ArrayList<>();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -33,6 +36,7 @@ public class ProductCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_products);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -73,19 +77,21 @@ public class ProductCart extends AppCompatActivity {
 
 
         gridView = findViewById(R.id.cartGridView);
-        productList = dbHelper.getAllProducts();
+        outOfStockGridView = findViewById(R.id.outOfStockGridView);
 
         gridView.setOnItemClickListener((parent, view, position, id) -> {
             Intent intent;
             CartItems selectedItem = productList.get(position);
             intent = new Intent(ProductCart.this, AddItemToCart.class);
-            Intent selectedItem1 = intent.putExtra("selectedItem", selectedItem);
-
             intent.putExtra("selectedItem", selectedItem);
             startActivity(intent);
         });
+
+
         searchView = findViewById(R.id.searchView);
         loadProductsFromDatabase();
+
+
         searchView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,6 +99,7 @@ public class ProductCart extends AppCompatActivity {
             }
         });
 
+        searchView.setOnClickListener(v -> searchView.setIconified(false));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -114,14 +121,41 @@ public class ProductCart extends AppCompatActivity {
         loadProductsFromDatabase();
     }
 
+
     private void loadProductsFromDatabase() {
-        List<CartItems> productList = dbHelper.getAllProducts();
-        gridAdapter = new ItemGridAdapter1(this, productList);
+        List<CartItems> allProducts = dbHelper.getAllProducts();
+        List<CartItems> inStockList = new ArrayList<>();
+        outOfStockList = new ArrayList<>();
+
+        for (CartItems item : allProducts) {
+            if (item.getQuantity() > 0) {
+                inStockList.add(item);
+            } else {
+                outOfStockList.add(item);
+            }
+        }
+
+        gridAdapter = new ItemGridAdapter1(this, inStockList);
         gridView.setAdapter(gridAdapter);
+
+        outOfStockAdapter = new ItemGridAdapter1(this, outOfStockList);
+        outOfStockGridView.setAdapter(outOfStockAdapter);
     }
 
     private void filterProducts(String query) {
         List<CartItems> filteredList = dbHelper.searchProducts(query);
-        gridAdapter.updateProductList(filteredList);
+        List<CartItems> inStockFilteredList = new ArrayList<>();
+        List<CartItems> outOfStockFilteredList = new ArrayList<>();
+
+        for (CartItems item : filteredList) {
+            if (item.getQuantity() > 0) {
+                inStockFilteredList.add(item);
+            } else {
+                outOfStockFilteredList.add(item);
+            }
+        }
+
+        gridAdapter.updateProductList(inStockFilteredList);
+        outOfStockAdapter.updateProductList(outOfStockFilteredList);
     }
 }

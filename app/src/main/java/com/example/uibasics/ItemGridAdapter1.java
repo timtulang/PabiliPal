@@ -1,18 +1,14 @@
 package com.example.uibasics;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-
+import androidx.cardview.widget.CardView;
 import java.util.List;
 
 public class ItemGridAdapter1 extends BaseAdapter {
@@ -22,13 +18,11 @@ public class ItemGridAdapter1 extends BaseAdapter {
     private LayoutInflater inflater;
     private ImageHelper imageHelper = new ImageHelper();
 
-
     public ItemGridAdapter1(Context context, List<CartItems> productList) {
         this.context = context;
         this.productList = productList;
         inflater = LayoutInflater.from(context);
     }
-
 
     @Override
     public int getCount() {
@@ -47,13 +41,14 @@ public class ItemGridAdapter1 extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (inflater == null){
-            inflater = (LayoutInflater)  context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        if (inflater == null) {
+            inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
-        if(convertView == null){
-            convertView = inflater.inflate(R.layout.item_before_cart, null);
+        if (convertView == null) {
+            convertView = inflater.inflate(R.layout.grid_item, null);
         }
 
+        CardView cardView = convertView.findViewById(R.id.cardView);
         ImageView imageView = convertView.findViewById(R.id.productImage);
         TextView productName = convertView.findViewById(R.id.productNameItems);
         TextView productPrice = convertView.findViewById(R.id.productPriceItems);
@@ -62,12 +57,16 @@ public class ItemGridAdapter1 extends BaseAdapter {
         CartItems product = productList.get(position);
 
         Bitmap imageBitmap = imageHelper.byteArrayToBitmap(product.getImagePath());
-
         imageView.setImageBitmap(imageBitmap);
         productName.setText(product.getName());
         productPrice.setText("₱" + product.getPrice());
         productQuantity.setText("Qty: " + product.getQuantity());
 
+        if (product.getQuantity() == 0) {
+            cardView.setCardBackgroundColor(context.getResources().getColor(R.color.gray));
+        } else {
+            cardView.setCardBackgroundColor(context.getResources().getColor(R.color.white));
+        }
 
         return convertView;
     }
@@ -77,5 +76,4 @@ public class ItemGridAdapter1 extends BaseAdapter {
         productList.addAll(newProductList);
         notifyDataSetChanged();
     }
-
 }
