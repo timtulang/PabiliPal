@@ -23,12 +23,9 @@ public class ProductCart extends AppCompatActivity {
 
     private InventoryRepository dbHelper;
     private ItemGridAdapter1 gridAdapter;
-    private ItemGridAdapter1 outOfStockAdapter;
     private GridView gridView;
-    private GridView outOfStockGridView;
     private SearchView searchView;
     private List<CartItems> productList = new ArrayList<>();
-    private List<CartItems> outOfStockList = new ArrayList<>();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -77,27 +74,17 @@ public class ProductCart extends AppCompatActivity {
 
 
         gridView = findViewById(R.id.cartGridView);
-        outOfStockGridView = findViewById(R.id.outOfStockGridView);
+        productList = dbHelper.getAllProducts();
 
         gridView.setOnItemClickListener((parent, view, position, id) -> {
-            Intent intent;
-            CartItems selectedItem = productList.get(position);
-            intent = new Intent(ProductCart.this, AddItemToCart.class);
+            CartItems selectedItem = (CartItems) gridAdapter.getItem(position);
+            Intent intent = new Intent(ProductCart.this, AddItemToCart.class);
             intent.putExtra("selectedItem", selectedItem);
             startActivity(intent);
         });
 
-
         searchView = findViewById(R.id.searchView);
         loadProductsFromDatabase();
-
-
-        searchView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                searchView.setIconified(false); // Expand the SearchView and focus on the input field
-            }
-        });
 
         searchView.setOnClickListener(v -> searchView.setIconified(false));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -125,7 +112,7 @@ public class ProductCart extends AppCompatActivity {
     private void loadProductsFromDatabase() {
         List<CartItems> allProducts = dbHelper.getAllProducts();
         List<CartItems> inStockList = new ArrayList<>();
-        outOfStockList = new ArrayList<>();
+        List<CartItems> outOfStockList = new ArrayList<>();
 
         for (CartItems item : allProducts) {
             if (item.getQuantity() > 0) {
@@ -135,11 +122,11 @@ public class ProductCart extends AppCompatActivity {
             }
         }
 
-        gridAdapter = new ItemGridAdapter1(this, inStockList);
-        gridView.setAdapter(gridAdapter);
+        List<CartItems> combinedList = new ArrayList<>(inStockList);
+        combinedList.addAll(outOfStockList);
 
-        outOfStockAdapter = new ItemGridAdapter1(this, outOfStockList);
-        outOfStockGridView.setAdapter(outOfStockAdapter);
+        gridAdapter = new ItemGridAdapter1(this, combinedList);
+        gridView.setAdapter(gridAdapter);
     }
 
     private void filterProducts(String query) {
@@ -155,7 +142,9 @@ public class ProductCart extends AppCompatActivity {
             }
         }
 
-        gridAdapter.updateProductList(inStockFilteredList);
-        outOfStockAdapter.updateProductList(outOfStockFilteredList);
+        List<CartItems> combinedFilteredList = new ArrayList<>(inStockFilteredList);
+        combinedFilteredList.addAll(outOfStockFilteredList);
+
+        gridAdapter.updateProductList(combinedFilteredList);
     }
 }

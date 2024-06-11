@@ -116,7 +116,6 @@ id login_user
 id main
 id menuItemTitle
 id menuviewrow
-id outOfStockGridView
 id productImage
 id productName
 id productNameItems

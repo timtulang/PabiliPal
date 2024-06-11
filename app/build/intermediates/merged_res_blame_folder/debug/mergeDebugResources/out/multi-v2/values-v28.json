@@ -4,7 +4,7 @@
             "outputFile": "com.example.uibasics.app-mergeDebugResources-31:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Nella\\.gradle\\caches\\transforms-3\\8976ca320708bf67ad2dbae6aedcec40\\transformed\\material-1.11.0\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\jm\\.gradle\\caches\\transforms-3\\8976ca320708bf67ad2dbae6aedcec40\\transformed\\material-1.11.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Nella\\.gradle\\caches\\transforms-3\\59fd4a344ace67f5c209394de1e2b72e\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\jm\\.gradle\\caches\\transforms-3\\59fd4a344ace67f5c209394de1e2b72e\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

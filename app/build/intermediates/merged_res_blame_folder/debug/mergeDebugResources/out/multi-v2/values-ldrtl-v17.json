@@ -4,7 +4,7 @@
             "outputFile": "com.example.uibasics.app-mergeDebugResources-31:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Nella\\.gradle\\caches\\transforms-3\\8976ca320708bf67ad2dbae6aedcec40\\transformed\\material-1.11.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\jm\\.gradle\\caches\\transforms-3\\8976ca320708bf67ad2dbae6aedcec40\\transformed\\material-1.11.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

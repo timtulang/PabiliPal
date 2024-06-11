@@ -124,7 +124,7 @@
         android:layout_below="@+id/productPrice"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/buttonshape"
+        android:backgroundTint="#D22B2B"
         android:text="Delete Item"
         android:textColor="#000000" />
 
