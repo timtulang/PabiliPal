@@ -8,6 +8,10 @@
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_sign_up.xml"
     },
     {
+        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/added_to_cart.xml",
+        "source": "com.example.uibasics.app-main-35:/layout/added_to_cart.xml"
+    },
+    {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\added_to_cart.xml",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\added_to_cart.xml"
     },
@@ -42,10 +46,6 @@
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\menuviewrow.xml",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\menuviewrow.xml"
-    },
-    {
-        "merged": "com.example.uibasics.app-mergeDebugResources-32:/layout/activity_edit_item_inventory.xml",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_edit_item_inventory.xml"
     },
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-mergeDebugResources-32:\\layout\\inventoryaddbutton.xml",

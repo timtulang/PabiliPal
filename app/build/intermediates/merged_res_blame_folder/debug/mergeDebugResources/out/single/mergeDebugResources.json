@@ -68,12 +68,12 @@
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\ppallogo.xml"
     },
     {
-        "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-hdpi_ic_products.png.flat",
-        "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-hdpi\\ic_products.png"
-    },
-    {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_buttonshape.xml.flat",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\buttonshape.xml"
+    },
+    {
+        "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable-hdpi_ic_products.png.flat",
+        "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable-hdpi\\ic_products.png"
     },
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_circlebuttonbg.xml.flat",
@@ -96,10 +96,6 @@
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\baseline_exit_to_app_24.xml"
     },
     {
-        "merged": "com.example.uibasics.app-debug-33:/layout_activity_edit_item_inventory.xml.flat",
-        "source": "com.example.uibasics.app-main-35:/layout/activity_edit_item_inventory.xml"
-    },
-    {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -108,12 +104,12 @@
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\layout\\activity_inventory.xml"
     },
     {
-        "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_menu.xml.flat",
-        "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\menu.xml"
-    },
-    {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_bag_shopping_solid_1.xml.flat",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\bag_shopping_solid_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_menu.xml.flat",
+        "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\menu.xml"
     },
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -188,12 +184,12 @@
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\app_icon_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-anydpi-v26_app_icon_round.xml.flat",
-        "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-anydpi-v26\\app_icon_round.xml"
-    },
-    {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_plus_solid.xml.flat",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\plus_solid.xml"
+    },
+    {
+        "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-anydpi-v26\\app_icon_round.xml"
     },
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_inventoryaddbutton.xml.flat",
@@ -234,6 +230,10 @@
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\mipmap-anydpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.uibasics.app-debug-33:/layout_added_to_cart.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/added_to_cart.xml"
     },
     {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\layout_activity_add_item_to_cart.xml.flat",
