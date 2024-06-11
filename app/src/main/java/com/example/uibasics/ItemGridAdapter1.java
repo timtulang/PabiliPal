@@ -48,7 +48,7 @@ public class ItemGridAdapter1 extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.grid_item, parent, false);
+            convertView = inflater.inflate(R.layout.item_before_cart, parent, false);
             holder = new ViewHolder();
             holder.imageView = convertView.findViewById(R.id.productImage);
             holder.productName = convertView.findViewById(R.id.productNameItems);

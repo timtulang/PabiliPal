@@ -85,7 +85,7 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="numberSigned"
+        android:inputType="number"
         android:text="0"
         android:textAlignment="center"
         android:layout_toRightOf="@+id/decrementStock"

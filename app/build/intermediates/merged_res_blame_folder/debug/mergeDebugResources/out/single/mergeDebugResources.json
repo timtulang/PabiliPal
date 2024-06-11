@@ -96,6 +96,10 @@
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\baseline_exit_to_app_24.xml"
     },
     {
+        "merged": "com.example.uibasics.app-debug-33:/layout_activity_edit_item_inventory.xml.flat",
+        "source": "com.example.uibasics.app-main-35:/layout/activity_edit_item_inventory.xml"
+    },
+    {
         "merged": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-debug-33:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\jm\\.gradle\\daemon\\8.4\\com.example.uibasics.app-main-35:\\drawable\\ic_launcher_foreground.xml"
     },

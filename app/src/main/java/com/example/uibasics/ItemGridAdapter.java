@@ -12,6 +12,7 @@ import java.util.List;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ItemGridAdapter extends BaseAdapter {
@@ -34,6 +35,7 @@ public class ItemGridAdapter extends BaseAdapter {
         this.productQuantities = productQuantities;
         this.images = images;
         this.isSecondGridView = isSecondGridView;
+        inflater = LayoutInflater.from(context);
     }
 
     @Override
@@ -107,11 +109,18 @@ public class ItemGridAdapter extends BaseAdapter {
             TextView productName = convertView.findViewById(R.id.productNameItems);
             TextView productPrice = convertView.findViewById(R.id.productPriceItems);
             TextView productQuantity = convertView.findViewById(R.id.productQuantityItems);
+            CardView cardView = convertView.findViewById(R.id.cardView);
 
             imageView.setImageBitmap(convertBit().get(position));
             productName.setText(productNames.get(position));
             productPrice.setText(String.valueOf(productPrices.get(position)));
             productQuantity.setText(String.valueOf(productQuantities.get(position)));
+
+            if (productQuantities.get(position) == 0) {
+                cardView.setCardBackgroundColor(context.getResources().getColor(R.color.gray));
+            } else {
+                cardView.setCardBackgroundColor(context.getResources().getColor(R.color.white));
+            }
 
         }
 
