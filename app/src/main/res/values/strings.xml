@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PabiliPal</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string name="products">Sales and Inventory</string>
+    <string name="inventory">List of Products</string>
+
+    <string-array name="dashboard_text">
+        <item>Sales and Inventory</item>
+        <item>List of Products</item>
+        <item>Create User Account</item>
+        <item>Logout</item>
+
+    </string-array>
+
+    <string-array name="dahboard_description">
+        <item>Explore and purchase a variety of products and easily sell your own, all on one convenient app.</item>
+        <item>Easily keep track of what you\'re selling with our app. Stay organized and know what\'s in stock and what\'s selling, all in one place.</item>
+        <item>Create an account that manages sales, stocks, and the creation of accounts.</item>
+        <item>Logout of the app.</item>
+
+    </string-array>
+
+    <string-array name="roles_array">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+
+
+</resources>

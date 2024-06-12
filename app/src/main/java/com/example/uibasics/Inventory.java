@@ -1,0 +1,153 @@
+package com.example.uibasics;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.SearchView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import com.example.uibasics.databinding.ActivityInventoryBinding;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Inventory extends AppCompatActivity {
+
+    private static final int ADD_ITEM_REQUEST_CODE = 1;
+    ActivityInventoryBinding binding;
+    InventoryRepository inventoryRepository;
+    GridView gridView;
+    ArrayList<InventoryItem> itemsRetrieved;
+    ItemGridAdapter gridAdapter;
+    SearchView searchView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityInventoryBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+        ImageButton backButtonInventory;
+        backButtonInventory = findViewById(R.id.imageButton);
+        backButtonInventory.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Inventory.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        inventoryRepository = new InventoryRepository(Inventory.this);
+        gridView = findViewById(R.id.availableItems);
+        searchView = findViewById(R.id.searchView);
+
+        loadItems();
+
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                searchView.setIconified(false); // Expand the SearchView and focus on the input field
+            }
+        });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                filterItems(query);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterItems(newText);
+                return true;
+            }
+        });
+
+        gridView.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent;
+            try {
+                InventoryItem selectedItem = itemsRetrieved.get(position);
+                intent = new Intent(Inventory.this, EditItemInventory.class);
+                Intent selectedItem1 = intent.putExtra("selectedItem", selectedItem);
+
+
+
+                intent.putExtra("selectedItem", selectedItem);
+
+            } catch (IndexOutOfBoundsException e){
+                intent = new Intent(Inventory.this, AddItemInventory.class);
+            }
+
+            startActivityForResult(intent, ADD_ITEM_REQUEST_CODE);
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadItems();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == ADD_ITEM_REQUEST_CODE && resultCode == RESULT_OK) {
+            loadItems();
+        }
+    }
+
+    private void loadItems() {
+        itemsRetrieved = new ArrayList<>(inventoryRepository.getItems());
+        ArrayList<String> productName = new ArrayList<>();
+        ArrayList<Double> productPrice = new ArrayList<>();
+        ArrayList<Integer> quantity = new ArrayList<>();
+        List<byte[]> images = new ArrayList<>();
+
+
+        for (InventoryItem item : itemsRetrieved) {
+            productName.add(item.getName());
+            productPrice.add(item.getPrice());
+            quantity.add(item.getStock());
+            images.add(item.getImage());
+        }
+
+        gridAdapter = new ItemGridAdapter(Inventory.this, productName, productPrice, quantity, images, true);
+        gridView.setAdapter(gridAdapter);
+    }
+
+    private void filterItems(String query) {
+        List<InventoryItem> filteredItems = inventoryRepository.searchProductsInventory(query);
+        updateGridView(filteredItems);
+    }
+
+    private void updateGridView(List<InventoryItem> items) {
+        ArrayList<String> productName = new ArrayList<>();
+        ArrayList<Double> productPrice = new ArrayList<>();
+        ArrayList<Integer> quantity = new ArrayList<>();
+        List<byte[]> images = new ArrayList<>();
+
+        for (InventoryItem item : items) {
+            productName.add(item.getName());
+            productPrice.add(item.getPrice());
+            quantity.add(item.getStock());
+            images.add(item.getImage());
+        }
+
+        gridAdapter = new ItemGridAdapter(Inventory.this, productName, productPrice, quantity, images, true);
+        gridView.setAdapter(gridAdapter);
+    }
+
+}
